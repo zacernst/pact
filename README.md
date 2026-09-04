@@ -1,5 +1,7 @@
 **This was written completely by AI with methodological guidance and rules from me (a human).**
 
+The full text is the `main.pdf` file in the "book/" directory.
+
 # The Pact
 
 An original, full-length recreation of **the Pact** — the in-universe public

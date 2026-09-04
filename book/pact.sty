@@ -1,0 +1,130 @@
+% pact.sty
+% Formatting for "The Pact" -- an austere, statute-book treatment
+% (centered rule-bound chapter openings, small-caps section headings).
+% Hand-rolled to avoid dependencies not present on this system (no
+% geometry, titlesec, enumitem, fancyhdr, xcolor, microtype). Only calc,
+% longtable, lmodern, hyperref are assumed available.
+%
+% Font note: mathpazo (Palatino) was tried first but this TeXLive install
+% lacks the actual URW Palladio Type1/TFM font files, and Metafont isn't
+% installed to generate substitutes either -- lmodern's font files are
+% actually present, so it's used instead.
+%
+% The earlier modern bold/Huge textbook treatment is retired but kept for
+% reference as pact-classic.sty; see main-classic.tex.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{pact}[2026/09/04 Formatting for The Pact]
+
+\RequirePackage{calc}
+\RequirePackage{lmodern}
+\RequirePackage{longtable}
+
+% ---------------------------------------------------------------------------
+% Page geometry (unchanged from pact.sty)
+% ---------------------------------------------------------------------------
+\setlength{\paperwidth}{6in}
+\setlength{\paperheight}{9in}
+\pdfpagewidth=\paperwidth
+\pdfpageheight=\paperheight
+
+\setlength{\textwidth}{4.4in}
+\setlength{\textheight}{7in}
+\setlength{\topmargin}{0.15in}
+\setlength{\headheight}{14pt}
+\setlength{\headsep}{0.25in}
+\setlength{\footskip}{0.4in}
+\setlength{\oddsidemargin}{0.55in}
+\setlength{\evensidemargin}{0.35in}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparsep}{0pt}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0pt}
+
+% ---------------------------------------------------------------------------
+% Sectioning: Articles (chapters) in Arabic numerals, Sections likewise --
+% same numbering convention as pact.sty (matches the show's Pact prop).
+% ---------------------------------------------------------------------------
+\renewcommand{\chaptername}{Article}
+\renewcommand{\thechapter}{\arabic{chapter}}
+
+\makeatletter
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\@seccntformat}[1]{Section \csname the#1\endcsname.\ }
+\makeatother
+
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\renewcommand{\theenumii}{\roman{enumii}}
+\renewcommand{\labelenumii}{(\theenumii)}
+
+\newenvironment{clauses}{\begin{enumerate}}{\end{enumerate}}
+\newenvironment{subclauses}{\begin{enumerate}}{\end{enumerate}}
+
+% ---------------------------------------------------------------------------
+% Chapter (Article) openings: centered, rule-bound, small caps -- a statute-
+% book treatment in place of book.cls's default Huge bold left-aligned head.
+% ---------------------------------------------------------------------------
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{40\p@}%
+  {\parindent\z@\centering\normalfont
+    \ifnum\c@secnumdepth>\m@ne
+      \if@mainmatter
+        {\normalsize\scshape \@chapapp\ \thechapter\par}%
+        \vskip 8\p@
+        {\hrule height 0.4pt width 1.6in}%
+        \vskip 14\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+    {\Large\scshape #1\par}%
+    \vskip 6\p@
+    {\hrule height 0.4pt width 1.6in}%
+    \vskip 30\p@
+  }}
+\def\@makeschapterhead#1{%
+  \vspace*{40\p@}%
+  {\parindent\z@\centering\normalfont
+    \interlinepenalty\@M
+    {\Large\scshape #1\par}%
+    \vskip 6\p@
+    {\hrule height 0.4pt width 1.6in}%
+    \vskip 30\p@
+  }}
+\makeatother
+
+% Section headings: small caps, centered, run at normal size rather than
+% the default \Large\bfseries -- a quieter, statute-like register.
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {3ex \@plus 1ex \@minus .2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\scshape}}
+\makeatother
+
+\newcommand{\articlenote}[1]{%
+  \begingroup
+  \small\itshape
+  \noindent #1\par
+  \endgroup
+  \vspace{0.6\baselineskip}
+}
+
+\newenvironment{definitionlist}{%
+  \begin{list}{}{%
+    \setlength{\leftmargin}{1.4em}
+    \setlength{\labelwidth}{1.2em}
+    \setlength{\labelsep}{0.4em}
+    \setlength{\itemsep}{0.3\baselineskip}
+    \setlength{\parsep}{0pt}
+  }
+}{\end{list}}
+\newcommand{\termitem}[1]{\item[]\textbf{#1.}\ }
+
+\pagestyle{headings}
+
+\makeatletter
+\renewcommand{\chaptermark}[1]{\markboth{\scshape\@chapapp\ \thechapter}{}}
+\renewcommand{\sectionmark}[1]{\markright{\scshape Section\ \thesection}}
+\makeatother

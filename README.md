@@ -1,3 +1,5 @@
+**This was written completely by AI with methodological guidance and rules from me (a human).**
+
 # The Pact
 
 An original, full-length recreation of **the Pact** — the in-universe public
@@ -94,6 +96,7 @@ nothing currently depends on that.
 ## Current state (as of this writing)
 
 **Done:**
+
 - Directory/build scaffold (`main.tex`, `pact.sty`, `Makefile`) —
   **verified working**, `make` produces `main.pdf` (75 pages) with exit
   code 0. See "Toolchain notes" below for two fixes that were needed.

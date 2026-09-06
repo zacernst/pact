@@ -1,5 +1,11 @@
 # Style guide for drafting the Pact
 
+> **Numbering note (2026-09-06).** This file predates the insertion of Article 10
+> (Mines) and Article 15 (Schooling). Where a number is paired with a name below,
+> the name is authoritative. Current numbering: 10 Mines, 11 Supply, 12 Commerce,
+> 13 Labor, 14 Housing, 15 Schooling, 16 Public Order, 17 Crimes, 18 Cleaning,
+> 19 Health, 20 Assembly, 21 Records, 22 Emergency, 23 Amendment.
+
 Practical, checklist-form guidance for writing Articles 2–22. Distilled
 from `CANON.md` section 17 (the show's prop "Pact" text, written in
 consultation with Hugh Howey — the closest thing to an authorial style
@@ -328,7 +334,7 @@ follow from — whatever that resolution ends up being.
   reusable device — use it again wherever an Article touches something
   genuinely secret.
 - **Prefer institutional/record-keeping framing over modern
-  therapeutic framing**, especially in Article 18 (Health): doctors,
+  therapeutic framing**, especially in Article 19 (Health): doctors,
   certificates, official causes of death, screenings — not counselors or
   therapy-speak. Consistent with the doctor-falsifies-the-record texture
   found in canon research.

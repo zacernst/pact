@@ -1,5 +1,11 @@
 # Wool / Shift / Dust — Canon Research Notes
 
+> **Numbering note (2026-09-06).** This file predates the insertion of Article 10
+> (Mines) and Article 15 (Schooling). Where a number is paired with a name below,
+> the name is authoritative. Current numbering: 10 Mines, 11 Supply, 12 Commerce,
+> 13 Labor, 14 Housing, 15 Schooling, 16 Public Order, 17 Crimes, 18 Cleaning,
+> 19 Health, 20 Assembly, 21 Records, 22 Emergency, 23 Amendment.
+
 Working notes compiled via web research (search + secondary sources: chapter
 summaries, study guides, reviews) to support drafting **the Pact**. This is
 **not a substitute for the primary text** — see "Confidence & gaps" at the
@@ -465,7 +471,7 @@ closely before drafting further Articles.
   condition (tremors progressing to cognitive/nervous-system decline),
   not hereditary or contagious, carrying enough stigma to bar diagnosed
   citizens from positions of power. Good real-world-feeling texture for
-  Article 18 (Health) and possibly an eligibility clause in 4/6/7
+  Article 19 (Health) and possibly an eligibility clause in 4/6/7
   (holding office) — usable without needing to explain its cause, same
   as the show never fully does.
 - **Deep-lore aside, resolved by the user, 2026-09-01**: Season 3 of the
@@ -731,7 +737,7 @@ they're found; add more as they turn up.
   failure/exposure — a specific, vivid number. Likely too clinical/exact
   a detail for the Pact's own public-facing text (which per Article 1
   already declines to specify mechanism), but useful as private
-  background color for Article 17 (Cleaning) drafting, not for the
+  background color for Article 18 (Cleaning) drafting, not for the
   Pact's actual prose.
 - **The Judge can order a search of the Sheriff's office, but only under
   a heightened standard**: confirmed in Season 1, "Hanna" — Judicial
@@ -867,13 +873,13 @@ The TV show's numbering does not align with our own 23-Article structure
 - Show Article 4 (Mayor, legislative power, elections every 5 years) → our Article 4
 - Show Article 5 (The Syndrome bars office-holding) → relevant to Articles 4, 5, 6, 7, 8 eligibility clauses
 - Show Article 6 (mechanization ban) → our Articles 1 (geography), 7 (Sheriff/public order), 15 (forbidden speech)
-- Show Article 7 (obstruction of officers) → our Article 15 (Public Order) / Article 16 (Crimes)
+- Show Article 7 (obstruction of officers) → our Article 16 (Public Order) / Article 17 (Crimes)
 - **Show Article 8 (interference with vital systems, "hollow due process")** → our Article 9 (Mechanical), explicitly cited in `STYLE.md` as the precedent model for procedural-sounding process with no real recourse
-- Show Article 9 (emergency power, "green list, Section 5") → our Article 21 (Emergency Powers)
-- Show Article 10 (health, recreational facilities, screenings) → our Article 18 (Health/Infirmary)
+- Show Article 9 (emergency power, "green list, Section 5") → our Article 22 (Emergency Powers)
+- Show Article 10 (health, recreational facilities, screenings) → our Article 19 (Health/Infirmary)
 - Show Article 11 (Intactica, age-11 girls' rite) → **explicitly excluded from this project per user decision** (load-bearing invented lore, show-only)
 - Show Article 12 (Generator level forbidden) → our Article 9 (Mechanical, Section 5)
-- **Show Article 13 (request to go outside, irrevocable)** → our Article 17 (The Cleaning), the single most load-bearing Pact rule in canon
+- **Show Article 13 (request to go outside, irrevocable)** → our Article 18 (The Cleaning), the single most load-bearing Pact rule in canon
 
 **Key findings from this transcription**:
 
@@ -897,7 +903,7 @@ The TV show's numbering does not align with our own 23-Article structure
 4. **"Green list, Section 5"**: the show references a "green list" protocol
    for emergency powers, Section 5. This is a named internal document/
    procedure within the Pact itself that doesn't fully appear in our
-   research yet. Article 21 (Emergency Powers) will need to address this —
+   research yet. Article 22 (Emergency Powers) will need to address this —
    either invent the green list's structure or forward-reference it in a
    way consistent with the show's own reference.
 

@@ -10,6 +10,13 @@ Pact content that's consistent with the same underlying logic — not
 just restate the one fact, but extrapolate everything else the same
 rationale would plausibly also require.
 
+> **Numbering note (2026-09-06).** Entries below were written under two earlier
+> Article numberings (before the Mines insertion, and before the Schooling
+> insertion). Where an entry pairs a number with a name, the name is
+> authoritative. Current numbering: 10 Mines, 11 Supply, 12 Commerce, 13 Labor,
+> 14 Housing, **15 Schooling**, 16 Public Order, 17 Crimes, 18 Cleaning,
+> 19 Health, 20 Assembly, 21 Records, 22 Emergency, 23 Amendment.
+
 ## The pipeline
 
 1. `CANON.md` — what's established about the world (research).
@@ -112,7 +119,7 @@ rationale would plausibly also require.
     in it should be a Judicial matter, not merely frowned on (Article 8,
     and cross-reference from 15/16).
   - A restricted, IT-supervised curriculum track for electronics/signal
-    theory, folded into Article 14 (Schooling) — ordinary schooling
+    theory, folded into Article 15 (Schooling) — ordinary schooling
     should visibly *not* teach this, and the Pact can note that such
     instruction exists only within IT's own apprenticeship, which
     doubles as controlling who ever learns enough to be dangerous.
@@ -189,7 +196,7 @@ rationale would plausibly also require.
     join the same restricted-technology category discussed in entry 1 —
     worth stating together in Article 15/16 rather than as two
     unrelated rules.
-  - Article 20 (Records, Porters, and the Post) gets a clean causal
+  - Article 21 (Records, Porters, and the Post) gets a clean causal
     reason for why porters still exist and matter: no mechanized
     alternative is permitted, at any speed, for people *or* messages,
     which is exactly what makes porters valuable, slow, and
@@ -423,3 +430,93 @@ rationale would plausibly also require.
   practice, consistent with the same tension.
 - **Status**: hypothesis adopted and drafted into Articles 2 and 16
   (2026-09-02). Article 18 dependency logged in `FACTS.md`.
+
+### 7. The request to go outside is granted, and irrevocable
+
+- **Canon fact** (book and show; the single most load-bearing Pact rule):
+  any citizen who says they want to go outside must be sent, and may not
+  take it back. Drafted as Article 18 §1 and Article 16 §1's carve-out.
+- **True rationale**: three things at once, all cold. (1) A *release
+  valve*: a population that cannot leave must be given exactly one exit,
+  or it will make its own; an exit that is granted on demand cannot be
+  argued for, organized around, or martyred over. (2) *Self-selection*:
+  the citizen most likely to say it is the citizen who has stopped
+  believing the wallscreen, i.e. the one the silo most needs gone; the
+  rule finds them without surveillance and removes them without a trial.
+  (3) *Ritual reconfirmation*: each exit is public and ends the same way
+  on the wallscreen, so every request is also a demonstration. The
+  irrevocability is what makes (1) and (2) work: a request that could be
+  withdrawn would be a bargaining chip, and a citizen who could come back
+  would be a witness.
+- **Stated rationale**: the citizen's own freedom, granted "in full"
+  (Article 16 §1); the Pact frames it as the one thing it cannot deny.
+  Article 23 §2(a) entrenches it beyond amendment, which reads as a
+  right and functions as a guarantee that the valve is never closed.
+- **Also explains, for free**: why the words must be exact (Article 18
+  §1(a)) — a fixed formula keeps loose talk (Article 16 §1) separable
+  from the real thing, so the valve is a valve and not a leak; and why
+  Article 22 may hold a request in abeyance but never deny it.
+- **Status**: already drafted; this entry records the design.
+
+### 8. Cleaning is public
+
+- **Canon fact**: cleanings are shown on the wallscreen; attendance is
+  voluntary (Article 7 §3, Article 18 §5, Article 20 §2(e) seating lottery).
+- **True rationale**: the whole apparatus of Article 1 (the sensors as
+  the silo's only proof of the outside) is pointless unless the proof is
+  *seen*. A private cleaning is a rumor; a public one is evidence.
+  Voluntariness is deliberate: compelled attendance would make the
+  cleaning a punishment of the crowd and breed resentment; a crowd that
+  *chooses* to watch has consented to the lesson. Victor's fingerprint:
+  the seating lottery turns scarcity of view into a privilege.
+- **Stated rationale**: "that all who wish to know may see the fate of
+  the citizen sent out" (Article 18 §5(a)) — framed as openness.
+- **Status**: drafted.
+
+### 9. The Sheriff is appointed, not elected or shadowed
+
+- **Canon fact**: Mayor-appointed (Holston, then Juliette over Marnes).
+- **True rationale**: an elected Sheriff would have a mandate of their
+  own and could stand against Judicial; a shadowed Sheriff would make
+  the office a self-perpetuating guild. An appointed Sheriff owes the
+  office to the Mayor, whom Judicial can reach (HYPOTHESES 4), and can
+  be replaced from outside the office whenever the office grows too
+  loyal to itself. The Sheriff *looks* like the citizen's own
+  peacekeeper and is structurally the weakest office in the Pact.
+- **Stated rationale**: "the Mayor's judgment is final" (Article 4 §2)
+  — framed as the Mayor's prerogative, not the Sheriff's weakness.
+- **Status**: drafted (Articles 4 §2(b), 7 §1(a)).
+
+### 10. Chits coexist with a flat ration
+
+- **Canon fact**: chits exist as currency (Article 12) while the ration
+  is a flat per-citizen right (Article 11 §3).
+- **True rationale**: the ration removes the one grievance that
+  reliably starts uprisings (hunger, unequal by floor) while chits give
+  every citizen a small ladder to climb that never reaches anything
+  structural — comforts, commissions, a better shirt. Ambition is
+  absorbed at the market instead of at the Assembly. Chits are also a
+  ledger (Article 12 §3): every citizen's surplus is visible to the
+  Chit-Keepers, who answer to Supply and the Mayor.
+- **Stated rationale**: fairness (the ration) and freedom (the market),
+  offered side by side as though they were the same virtue.
+- **Status**: drafted. Article 11 §3(b)'s "lessened alike for every
+  citizen" equality clause remains a candidate Amendment Log tension.
+
+### 11. The lottery is by chance, not merit
+
+- **Canon fact**: birth is allocated by lottery, not by fitness,
+  seniority, or office.
+- **True rationale**: any merit rule would have to be *stated*, and a
+  stated rule can be gamed, resented, and organized against; chance
+  cannot. Chance also spreads the grievance evenly and makes the Mayor
+  and Judicial innocent of every individual refusal (Article 3 §5's
+  transparency clauses exist to make that innocence visible). And a
+  birth pegged to a death (Article 2 §5, Article 3 §2(b)) keeps the
+  count flat without anyone having to decide who may not reproduce.
+- **Stated rationale**: fairness; Article 3 §5's "transparency is the
+  guard against favoritism."
+- **Also explains**: why the seating for a cleaning is also by lottery
+  (Article 20 §2(e)) — the same laundering of scarcity through chance.
+- **Status**: drafted.
+

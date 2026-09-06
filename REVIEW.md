@@ -5,6 +5,24 @@ Full read of `frontmatter/`, `articles/article01`–`article23`, `backmatter/ame
 
 Current size: ~27,100 words of source (~25k prose) against the 60k+ target.
 
+> **Status as of 2026-09-06.** A second full review was done on 2026-09-06 and its
+> findings applied in the working tree. Status of the items below, by ID:
+>
+> - **Done**: A1, A2 (cross-references verified by meaning across all Articles),
+>   A3, B1, B2, B3, B4, B5 (five-year term, Article 4 §1(b)), C1–C4, D1–D10,
+>   E4, E5, E6 (Amendment retitled "The Assembly Quorum" and reworded to *set*
+>   a quorum), E7, E8, E9, E10, F1, F2, F3, F4, F5, G1, G2, G3, G4.
+> - **Partly done**: E1–E3 (the Log is now 13 entries with two restrictions,
+>   an IT-fingerprinted amendment, a repeal-and-restore pair, a lost-text scar,
+>   and two early imitations of the founders' registers; the voice of entries
+>   1, 4, 5, 6, 8, 10 is still uniform); G5 (source is ~37k words of ~60k
+>   target — see `FACTS.md` and README for growth areas).
+> - **Not done**: the `\ref`-based cross-referencing suggested under A2.
+>
+> Amendment numbers cited in this file are the numbering *at the time of the
+> review*; the Log has since been renumbered twice (see `FACTS.md`, "Amendment
+> Log rebuilt").
+
 Findings are grouped by tier. Tier A must be resolved first — most of Tier D's cross-reference errors
 are downstream of it.
 

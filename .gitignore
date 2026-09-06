@@ -1,0 +1,12 @@
+# LaTeX build artifacts (main.pdf is kept as the deliverable)
+book/*.aux
+book/*.log
+book/*.fls
+book/*.fdb_latexmk
+book/*.out
+book/*.toc
+book/*.synctex.gz
+book/articles/*.aux
+book/backmatter/*.aux
+book/frontmatter/*.aux
+book/main-classic.pdf

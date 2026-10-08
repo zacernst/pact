@@ -341,3 +341,86 @@ follow from — whatever that resolution ends up being.
 - **Skip "Intactica."** Per the user's decision, this TV-only invented
   rite is not used anywhere in this project — don't reach for it as
   texture for Article 3 or 18.
+
+## The banned-word list (added 2026-10-08, from `REVIEW-2026-10-07.md` B3/E3)
+
+The 2026-10-07 review found that the draft had split into two registers:
+the expansion-pass sections held the voice described above, while the
+earlier sections sat in a flat, modern, administrative-report voice. The
+tell was almost always vocabulary. **None of the following appears
+anywhere in the Pact's text, and none should be introduced:**
+
+> *genuine, responsibility, capacity, entitled, mandatory, functions,
+> maintenance/maintains, essential, resources, policy, protocol,
+> categories, tiers, pathways, management, comprehensive, screening,
+> wellbeing, facilities, adequate, ensure/ensures, staffing, annually,
+> agenda, adjudicate, verify, monitor, standard* (except a physical
+> standard of weight or measure), *window* (of time), *slot, partnership,
+> critical role, at-risk, day-to-day, undue delay, deemed.*
+
+The replacements are almost always shorter and more physical: *keep*,
+*see to*, *see the right kept*, *what a citizen can bear*, *the silo's
+need*, *the stores*, *the span allowed*, *a place in the lottery*, *a
+trade of trust*, *upkeep*, *watch*. Where a word of this kind seems
+necessary, the clause is usually trying to say something a silo would say
+differently — rewrite the clause, not the word.
+
+A mechanical check:
+
+```
+grep -rniE "\b(genuine|responsibility|capacity|mandatory|protocol|policy|tiers?|pathways?|wellbeing|facilities|adequate|ensures?|staffing|annually|agenda|monitor[a-z]*|comprehensive|screening|window|slot|partnership)\b" --include=*.tex book/
+```
+
+## Time, and numerals
+
+- **No unit of time appears that the Pact does not define.** Article 1 §6
+  gives the silo the **hour**, the **day**, the **cycle** (ten days), the
+  **season**, and the **year**. There is no week and no month; a span of
+  "fourteen days" or "seven days' notice" is a slip, not a style choice,
+  and `tools/xref.py` now fails the build-check on it. Spans past a cycle
+  are named in cycles, seasons, or years. A term in the mines is set in
+  whole seasons and never in days (Article 17 §7(a)).
+- **There is no daylight.** No clause may turn on dawn, dusk, daylight,
+  or nightfall; the silo has the waking hours of its day, the lamps, and
+  IT's clock.
+- **Numbers are spelled out** in running prose, including level numbers:
+  "the uppermost level," not "Level 1"; "one hundred and forty-four
+  levels." Only Article and Section *labels* are numerals.
+
+## The artifact layer (added 2026-10-08)
+
+The printed book is a *copy* of the Pact, and the Pact legislates its own
+copies. Articles 21 and 23 require that a copy be made from the archive copy,
+compared before placing, marked with the floor of its placing and the season of
+its making, compared again yearly, corrected against the master when found to
+differ, and brought up to date by a sheet set in at the Appendix until it is
+printed afresh. The book now does all of that to itself.
+
+Three rules govern anything added to this layer:
+
+1. **Is it a thing an office did?** If it is a thing weather did --- foxing,
+   stains, torn edges, aged paper --- it does not go in. Simulated wear reads as
+   a fan mock-up; simulated bureaucracy reads as a document. (All of it is
+   technically achievable with `graphicx` and `\AtBeginShipout`. Refusing it is
+   a choice, and the choice is restraint, as everywhere else in this project.)
+2. **Does a clause already require it?** If so, cite that clause on the page.
+3. **Would it still be there if the copy were new?** A new copy has a placing,
+   a number, a comparison, a stamp and a set-in sheet. It has no stains.
+
+Macros live in `pact.sty`: `\stamp`/`\stampline` (a rotated double-ruled
+small-caps block --- office wording distinguishes one stamp from another, never
+ornament), `\fillrule` (a ruled blank to be completed by hand), and `\corr`
+(a struck reading with the true one beside it). **`\corr` is used exactly once,
+at Article 18, Section 8(b), and the front-matter Notice names that place.** A
+second hand inside the text is a seam; a dozen is a gimmick.
+
+No names anywhere in the layer: offices sign, citizens do not. No year: the
+Placing Page leaves a blank where the season of the making goes, which is why
+the book can refuse to date itself without saying so.
+
+## Rules, not \hrule
+
+`\hrule` is a TeX primitive that ignores `\centering`, so a centred heading
+with `{\hrule height 0.4pt width 1.6in}` under it gets a left-flush rule. Every
+chapter opening in the book had this until 2026-10-08. Use
+`\rule{1.6in}{0.4pt}` inside centred material.

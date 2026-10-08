@@ -22,6 +22,19 @@ Current size: ~27,100 words of source (~25k prose) against the 60k+ target.
 > Amendment numbers cited in this file are the numbering *at the time of the
 > review*; the Log has since been renumbered twice (see `FACTS.md`, "Amendment
 > Log rebuilt").
+>
+> **Status as of 2026-10-08.** The three items still open above are now closed
+> by the application of `REVIEW-2026-10-07.md`:
+>
+> - **E1–E3 done**: the Log is 21 entries plus a Judge's entry on the
+>   numbering, and Amendments 1, 4, 5, 6, 8, 10, and 11 each carry a legible
+>   hand of their own.
+> - **G5 done**: source is ~71,400 words against the 60k+ target.
+> - **A2's `\ref` conversion done**: all 236 Sections carry meaning-keyed
+>   labels and all ~1,200 citations go through `\artref`/`\secref`;
+>   `tools/xref.py` enforces it.
+>
+> Nothing in this file is outstanding.
 
 Findings are grouped by tier. Tier A must be resolved first — most of Tier D's cross-reference errors
 are downstream of it.

@@ -520,3 +520,116 @@ rationale would plausibly also require.
   (Article 20 §2(e)) — the same laundering of scarcity through chance.
 - **Status**: drafted.
 
+
+### 12. The silo tolerates religion, and licenses it
+
+- **Canon fact**: the silo has a church and a priest (Father Wendel), and
+  belief is neither the law's business nor an offense; but the church has
+  no office under any governing document and no Head.
+- **True rationale**: a gathering that meets on a schedule, in a known
+  room, with a known attendance, is the cheapest surveillance the silo can
+  buy, and the alternative — belief driven underground — is the one
+  gathering the Sheriff cannot count. So the Pact does not permit belief;
+  it *licenses* it: Article 20 §9 has the gathering entered with the
+  Clerk, has it teach nothing contrary to Article 1, denies it the
+  standing of a petition or a count, and takes "the count of those who
+  came and not their names." The name-withholding looks like protection
+  and functions as the reason no citizen objects to the counting.
+- **Stated rationale**: a citizen's belief is the citizen's own, and the
+  silo's peace is served by a room to hold it in.
+- **Also explains**: why no clause makes a citizen's trade, ration,
+  dwelling, or lottery place turn on attendance — the gathering is only
+  useful to the silo while it is safe to attend.
+- **Status**: drafted, Article 20 §9 (2026-10-08).
+
+### 13. The dead are given to the soil, and a cleaned citizen is not
+
+- **Canon fact**: the silo's dead go into the farm soil; nothing is kept,
+  and nothing leaves.
+- **True rationale**: a silo cannot afford either the volume or the
+  sentiment of a grave, and the farms need the nitrogen. But the useful
+  part is the asymmetry the practice creates: a citizen sent to clean has
+  no body to give, and so cannot be mourned in the one form the silo
+  recognizes. Article 19 §12 therefore denies that citizen the rite —
+  "the body not returning to the silo" — and reduces the death to a name
+  read once at the next ordinary sitting "without the cause set beside
+  it," with an officer or teacher who sets the cause beside it answering
+  to Judicial. The effect is that the silo's grief has an official shape,
+  and the cleaned are outside it.
+- **Stated rationale**: what the silo fed, the silo takes again — the
+  fixed words of the giving, which are also an argument.
+- **Also explains**: why Article 20 §8's Day of Remembrance reads **no
+  name**. If the day named names, the names it did not name would be
+  heard.
+- **Status**: drafted, Article 19 §12 and Article 20 §8 (2026-10-08).
+
+### 14. The one thing no law forbade was saying the screen is false
+
+- **Canon fact**: the view on the wallscreen is a lie, maintained
+  physically; a citizen who learns it learns it by going outside.
+- **True rationale**: the Pact's whole architecture around the world above
+  — Article 1 §4's commitment of the sensors to IT alone, Article 16's
+  speech offenses, Article 18's cleaning — is built to keep the citizen
+  from *wanting* outside. It is not built to answer the citizen who
+  concludes the image is manufactured, because the Founders' own model of
+  the danger was longing rather than skepticism: Victor expected people to
+  yearn, not to audit. That is a real blind spot in the design and worth
+  leaving visible in its shape, but not in its consequence; so the fix is
+  written as ordinary anti-rumor law of a piece with Article 16 §2, and
+  the measure lands among the offenses answered by the mines rather than
+  among the gravest. A silo that hanged people for doubting the screen
+  would be telling them the screen was worth doubting.
+- **Stated rationale**: a citizen may not give out, as a thing known,
+  what the citizen cannot know; the sensors are IT's to read.
+- **Also explains**: the companion clause on what may be said when the
+  screen fails. "A citizen may say that the screen is dark, for it is. A
+  citizen may not say why." The silo cannot prevent the observation; it
+  can reserve the explanation.
+- **Status**: drafted, Article 16 §2 and Article 17 §3 (2026-10-08).
+
+### 15. Nothing kept a citizen away from the airlock
+
+- **Canon fact**: the airlock sits off the cafeteria on the uppermost
+  level, in the most public room in the silo, and the cleaning is watched
+  from it.
+- **True rationale**: the Pact protected a citizen from being *compelled*
+  to approach the airlock and never restricted approaching it, because
+  the Founders' attention was on the citizen who wanted to go out and not
+  on the citizen who wanted to reach the sensors. Article 18 §11 closes
+  it the way the silo closes things: the far door is fastened at every
+  hour, the fastening is IT's and the key is the Department's — "no other
+  office holds one, neither the Sheriff's nor the Mayor's nor Judicial's"
+  — and a second finding there is *deemed* an attempt at the gravest
+  offense, the stated ground being that "the approach being the one place
+  within the silo from which the outward sensors may be reached by a
+  hand." The deeming provision explains the restriction without
+  disclosing anything, which is the gesture-without-specifics device used
+  at full strength.
+- **Stated rationale**: the safety of the seal, and the apparatus of the
+  silo's keeping.
+- **Status**: drafted, Article 18 §11 (2026-10-08).
+
+### 16. The households of the silo must be plainly ordered
+
+- **Canon fact**: a silo of a few thousand, closed for generations, with
+  no marriage impediment stated anywhere in the show's prop Pact.
+- **True rationale**: a closed population of this size cannot run a
+  lottery for generations without consanguinity becoming an arithmetic
+  problem, and the Founders would have run that arithmetic. But stating
+  the real reason would require stating how closed the population is and
+  for how long — which is the founding question the Pact exists to stop
+  citizens asking. So Article 3 §13 gives only the administrative
+  rationale: "the silo's households are to be plainly ordered, and the
+  rolls are to say without inquiry who is kin to whom." The biology is
+  never mentioned.
+- **Also generates**: Article 2 §4's **line** — a citizen's parents, their
+  parents, and their parents, three generations and no fewer, kept
+  expressly "for the keeping of Article 3, Section 13 and for no other
+  purpose." Which means the rolls now hold a genealogy of the whole silo,
+  gathered for a stated reason that is not the reason, and the Clerk reads
+  it. The limit is written in as well — "no roll is required to carry a
+  line further back than the rolls themselves reach" — which is both a
+  practical concession and an admission that the rolls have a beginning.
+- **Stated rationale**: orderly households; the rolls answering without
+  inquiry.
+- **Status**: drafted, Article 3 §13 and Article 2 §4 (2026-10-08).

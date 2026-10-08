@@ -560,7 +560,7 @@ These rows record the design deliberately. **Do not "fix" any of them** without 
 
 | Fact | In-world explanation | Implications for later Articles |
 |---|---|---|
-| **Article 15 written 2026-09-03, filling the slot lost when Mines was inserted as Article 10** (see `REVIEW.md` A1); Articles 15--22 renumbered to 16--23 (Public Order 16, Crimes 17, Cleaning 18, Health 19, Assembly 20, Records 21, Emergency 22, Amendment 23) to make room | Restores the OLD/intended cross-reference scheme that Articles 1, 2, 6, 7, 8, 10, 11, and 16 already assumed | `REVIEW.md`'s A2 mechanical cross-reference pass is still outstanding for the files that used the interim NEW scheme or a mixed one (Articles 3, 4, 5, 9, 12, 13, 14, 17, 19, 20, 21, 22, and the Amendment Log) — do not assume the rest of the draft is internally consistent yet |
+| **Article 15 written 2026-09-03, filling the slot lost when Mines was inserted as Article 10** (see `REVIEW.md` A1); Articles 15--22 renumbered to 16--23 (Public Order 16, Crimes 17, Cleaning 18, Health 19, Assembly 20, Records 21, Emergency 22, Amendment 23) to make room | Restores the OLD/intended cross-reference scheme that Articles 1, 2, 6, 7, 8, 10, 11, and 16 already assumed | **Retired 2026-10-08.** `REVIEW.md`'s A2 pass is done: every citation in the text is now a `\artref`/`\secref` keyed to a meaning-based label, so the numbering scheme is no longer load-bearing anywhere. `tools/xref.py` enforces it. |
 | Schooling runs from the third naming-day (nursery) through the sixteenth (majority): schoolroom proper from the sixth naming-day, the Article 1 founding recitation completed by the eighth, Article 13's aptitude testing from the twelfth, and an optional season-length trial placement (not a shadowing) in a citizen's final two years | Gives Article 2's naming-day-reckoning promise ("schooling under Article 15... is reckoned from it") concrete content, and lets a child's aptitude testing under Article 13 land on an already-informed citizen | Any later Article touching child-rearing or household composition should stay consistent with children being at the schoolroom on ordinary working days from age six |
 | **Added 2026-09-04**: the sixth naming-day is now formally named "the age at which a child is judged to have reached basic societal awareness" (Article 15, Section 2) | TV-sourced (`CANON.md` §18, confirmed by the user against the show, attributed to Bernard); happened to confirm a number this project had already independently chosen for the schoolroom-entry threshold, rather than requiring any renumbering | No other Article needs to change; any future Article referencing why formal schooling (as opposed to nursery-keeping) begins at six now has this term available as the stated, civic-sounding rationale |
 | Teaching the young is confirmed as a full-shadowed, order-adjacent trade under Article 13 Sections 5 and 7, subject to the same ongoing vetting as other order-adjacent trades; a School Aide (short shadow) may assist but not teach the founding recitation or course of study unsupervised | Implements `PROFESSIONS.md`'s flag that Teacher is "the single trade this project's deep lore... makes most sensitive" without ever stating why | Article 13 needs no changes — Article 15 only invokes the vetting machinery already there; keep any future critical-roles Article consistent with Teacher staying on that list |
@@ -757,3 +757,146 @@ Mechanical check: every "Article A, Section B" and in-Article "Section N" refere
 | 11 | Article 13 §3, Amendment 8 vs Article 1 §6 | "weeks," "months" survived after the definitions fixed the calendar as day/cycle/season/year | "three cycles," "some cycles or a season," "one cycle" |
 
 Checked and found consistent (no change): Article 6 §8 warrants vs Article 14 §4 Sheriff entry (Sheriff ≠ Officer); Article 6 §12 conveyance vs Article 10 §2(e) and Article 14 §2(a) (a sentenced citizen counts as assigned to Mines); Article 17 §7 term reckoning vs Article 6 §12 and Article 10 §8; Article 19 §8(e) stillbirth counted as a name closed vs Article 3 §2(b) (correct: the place re-opens); Article 22 §9(b) two-shift cap vs Article 9 §8(a); Article 2 §6 oath vs Article 15 §10(d) and Article 21 §8(a); Article 12 §1(c) no chits in the mines vs Article 17 §7(f) (held in the ledger, not paid); Article 11 §13 bodies to the soil vs Article 19 §11 and Article 2 §5; Article 5 §4(b) senior-Head fallback vs Article 8 §11(c) (the IT Head's confirmation date is now the delivery of the naming). Three lowercase "deputy of Judicial" uses (Articles 2, 3, 13) sit beside the Sheriff's "Deputy" and the "Deputy Mayor"; left as is, being qualified each time.
+
+---
+
+## Second full-draft review applied (2026-10-08)
+
+`REVIEW-2026-10-07.md` was implemented in full — all five tiers. Final
+state: 236 Sections, 21 amendments plus a Judge's entry, ~71,400 source
+words, 217 PDF pages, `make` clean with no undefined references, and
+`tools/xref.py` reporting no problems.
+
+### Tier A — the twelve defects
+
+| # | Defect | Fix |
+|---|---|---|
+| A1 | Article 9 §7's reporting duty triggered on the breach, so a citizen who stumbled on a hidden work had nothing to report under | §7(c) now triggers on coming upon such a work "unlooked-for," and binds the citizen told as well as the citizen telling |
+| A2 | Article 9 §7(d) and §7(e) contradicted each other on who may open a hidden work | §7(e)–(f) reconciled: nothing is opened save by the Head of Mechanical's order, and the Head alone decides whether the Mayor is told of any particular work |
+| A3 | Article 17 §7(e) sent the Judge to rule, and §1(a) forbade every ruling available: a citizen past three terms could not lawfully be sentenced at all | **Left in the founding text as written** and patched in-world as **Amendment 21**, a later hand assigning such a citizen to the workings "not as a term, and not as a sentence, but as the assignment of the citizen's labor," with no end set because "the silo's need of hands in the workings being continual." The Judge's statement finds no conflict because an assignment is not one of the three measures. Article 17 is struck from the Log's Unamended Provisions list as a result |
+| A4 | "One fifth of the silo's citizens of majority" had no denominator the Pact keeps | Every such threshold is now reckoned against the full count of the rolls under Article 2 §8 — which counts toward itself every child who cannot sign, raising the real bar by close to a third and reading as an administrative simplification |
+| A5 | Amendment 5 created a third route to shortening a mines term, bypassing Article 17 §7(d)'s requirement that the Head of Mines join, and nothing noticed | The Judge's statement is now entered on Amendment 5, finding no conflict on the reasoning that the joining is required only of a petition brought under Article 17 "and not of one brought under this amendment, which makes its own way to the Judge" — plausible, confident, and wrong. The same statement rules that half a term is reckoned to the nearer whole season, "and, where the seasons are odd in number, to the greater" |
+| A6 | The Preamble's epigraph promises a reading at the seating of every Mayor; nothing provided it | Article 4 §8(b): read entire by the Clerk before the oath, "not shortened for the length of the sitting, nor for the Mayor having heard it before" |
+| A7 | The oath of office had no words | Article 4 §8(c) sets them, sworn line by line after the Judge |
+| A8 | The ward of the silo had three homes | Article 3 §§7–12 and Article 11 settle who keeps and who rations a ward |
+| A9 | Nobody nominated the Judge | Article 4 §2(c): the Officers of Judicial put the name forward, and the Mayor confirms that name or declines it "and names no other" |
+| A10 | Nothing credited a Department's account | Article 12 §3(e) |
+| A11 | No office kept the clock | Article 8 §§10–11: IT keeps it, corrects it, and "answers to no other office for the keeping of the clock" — so IT decides when a term ends and when the fifth year of a Mayoralty has arrived |
+| A12 | A ledger balance had no disposition on death | Article 12 §3(f): the balance returns to the silo and the household is told the sum |
+
+### Tier B — the two registers
+
+The flat, modern, administrative voice is gone from the early Sections of
+Articles 1, 3, 4, 5, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, and 23. Every
+section title flagged in the review is renamed; `STYLE.md` now carries the
+banned-word list, the time-system rule, and the numerals rule, with a
+`grep` that re-checks all three.
+
+Two terminology changes ran across the whole text: **"critical role" →
+"trade of trust"** (20 sites, 6 Articles) and **"Maintenance worker of
+Supply" → "mender of Supply"** (9 sites); plus *slot* → *place*,
+*window* → *span*/*place*, *tier* → *kind*/*manner*, *deactivated* →
+*quieted*, *re-activated* → *restored*.
+
+### Two defects the review did not find
+
+| Where | Defect | Fix |
+|---|---|---|
+| Article 13 §6 | The title was **"Critical Roles and Order-Adjacent Trades."** The Pact named the Order on a section heading. This is the hard constraint, so it outranked the review's own tables | Retitled **"The Trades of Trust,"** which also purged the modern HR register from six Articles |
+| Article 14 §4(b) | A search was to be "conducted in daylight or by lamp." There is no daylight in a buried silo | "made in the waking hours of the silo's day, save where the Judge's order says otherwise and why" |
+
+### Tier C — the ten coverage additions
+
+Every one was **appended** to its Article rather than inserted, so no
+Article was renumbered and no existing citation moved. They interlock
+rather than merely coexist:
+
+| # | Added | Where |
+|---|---|---|
+| C1 | The degrees within which a marriage is not made | Article 3 §13 (6 clauses) — and it gives Article 2's rolls a second purpose, the **line** (three generations above the citizen), with a built-in limit: "no roll is required to carry a line further back than the rolls themselves reach" |
+| C2 | Gatherings of belief | Article 20 §9 (7 clauses) — entered with the Clerk, teaching nothing contrary to Article 1, "the count of those who came and not their names," and no citizen's trade, ration, dwelling, or lottery place turning on attendance |
+| C3 | The giving to the soil, and the mourning | Article 19 §12 (8 clauses) — the fixed words *What the silo fed, the silo takes again, and gives again, and is not lessened*; and where a citizen has been sent to clean there is no giving, the name being read once "without the cause set beside it," and an officer or teacher who sets the cause beside it answering to Judicial |
+| C4 | The citizen whose body or mind cannot bear the labor | Article 13 §14 (7 clauses) — "the silence of such a citizen is never taken for consent, and never taken for refusal, but is asked again by another hand" |
+| C5 | The renumbering scar | A Judge's entry in the Log: two leaves cut from the roll between the eleventh and twelfth entries, "the cut is clean, is made with a blade," the entries after them renumbered, so the Log's own order is now a reconstruction and an amendment cited by number in any older record is not certainly the amendment now bearing it |
+| C6 | The days the silo keeps | Article 20 §8 (8 clauses) — the Day of the Founding, the Day of Remembrance, the rest day, the Mayor's further days capped at two; and on such a day "no petition is received, no vote is counted, no hearing is held, and no sentence is carried out, a cleaning least of all" |
+| C7 | Saying the screen is false | Article 16 §2 (two clauses) and Article 17 §3's eighth item — the one utterance the whole architecture of Articles 1, 16, and 18 exists to suppress, and it was legal. "A citizen may say that the screen is dark, for it is. A citizen may not say why." Placed among the offenses answered by the mines, not among the gravest, which is the restrained choice |
+| C8 | The airlock and its approach | Article 18 §11 (6 clauses) — the fastening is IT's and the key is the Department's, "no other office holds one, neither the Sheriff's nor the Mayor's nor Judicial's"; a second finding there is deemed an attempt at the gravest offense "the approach being the one place within the silo from which the outward sensors may be reached by a hand"; and no leave to pass the outer door is given "to no citizen, of no office, for no cause, upon no order, in no emergency" |
+| C9 | Articles 5 and 23 brought up to weight | Article 5: 924 → 2,366 words, five new Sections of handover procedure (what the Deputy may and may not sign; the inventory of the Mayor's chambers; the Deputy's own trade, dwelling, and chits; the standing orders of a Mayor who is gone; the Deputy in the Assembly and before Judicial) — so §4(b)'s Department-head fallback is now buried in ordinary procedure instead of sitting alone. **§4(b) unchanged word for word.** Article 23: 796 → 3,021 words, five new Sections (the form of a petition; the counting of the names; the making known; the printing of a ratified amendment; an amendment that fails; words that contradict what is already written), and a rewritten final Section that answers the Preamble in the Preamble's own words — the hull, the sound citizen, and "the silence is not permission." **§2(g) unchanged word for word** |
+| C10 | Distinct hands in the Log | Amendments 1, 4, 5, 6, 8, 10, and 11 rewritten: 1 as a nervous first exercise of a brand-new power (recites the power, says twice that nothing else changed, and makes the shortest change in the Log); 4 as a Supply clerk's arithmetic (a mean cost divided by a headcount, so the stipend moves when no price has moved); 5 as a reformer's hand; 6 as a plain Judicial hand, four sentences, three of them about what Judicial keeps; 8 as the Head Physician's grievance dressed as a general principle, naming the Infirmary's beds twice before it names the citizen once; 10 as a competent imitation of 1 by someone who did not understand it; 11 keyed to the rolls by a hand that did not notice it had made the quorum nearly unreachable |
+
+### Tier D — mechanical polish
+
+D1 ("fourteen days" → two cycles), D2 (Amendment 11's "seven days" → one
+cycle), D3 ("Level 1" → "the uppermost level"), D4 (the two citations
+missing their comma), D5 (Article 17 §§3–4's 140- and 200-word run-on
+sentences are now displayed lettered lists of eight items each, with the
+pre-existing clauses continuing via `\setcounter{enumi}{8}`), D6 (the
+Market Clerk is Supply's), D7 (a schoolroom is now kept in every zone, in
+Articles 1, 14, and 15 alike, with the Up Top holding the *chief*
+schoolrooms).
+
+**D8 — resolved as a deliberate keep.** Article 18 §1(c)'s "No Pact
+provides a method by which a citizen might return" stays exactly as
+written. The odd plural is the point: to a citizen it reads as a slip for
+"This Pact provides no method"; to a saga-aware reader it is a sentence
+about every silo's Pact, written by someone who knew there were others.
+Rewriting it to remove the typo reading would destroy the seam. **Do not
+"fix" this line.**
+
+### Tier E — infrastructure
+
+- **E1 done.** 236 Sections, each with a `\label{sec:...}` keyed to its
+  *meaning* and not its number; ~1,200 citations now go through
+  `\artref`, `\secref`, `\secrefhere`, `\artnum`, `\secnum`. No literal
+  "Article N" citation survives in the prose. Renumbering is now safe and
+  breakage is loud.
+- **E2 done.** `tools/xref.py` was rewritten from scratch (the old script
+  parsed the literal citations the conversion eliminated) and now checks
+  the five things LaTeX cannot: no literal citation has crept back; every
+  label named by a reference exists; every Section carries exactly one
+  label; the Log's Unamended Provisions list agrees with what the Log's
+  own entries say they amend; and no span is measured in a unit Article 1
+  does not define.
+- **E3 done.** `STYLE.md` carries the banned-word list, the time rule
+  (including "there is no daylight"), and the numerals rule.
+
+## The seven fan-review gaps closed, and the artifact layer (2026-10-08)
+
+Second pass of 2026-10-08, after `FAN-REVIEW-2026-10-08.md`. Source is now
+~73,600 words; `make` builds 229 pages with zero overfull boxes.
+
+### The gaps from `FAN-REVIEW-2026-10-08.md` section 3
+
+| Gap | Where it was answered |
+|---|---|
+| The last meal | Article 18, Section 8, three new clauses: the meal of the citizen's own asking out of Supply's ordinary stores and never the reserve; the cost borne by Judicial, not the household; the household may cook it and bring it and may eat with the citizen once; **and the Sheriff enters what was asked for, what was given, and what was not to be had, and that roll goes to the archive, no office being required to say what is done with it afterward.** |
+| The screen in the cell | Article 7, Section 6, new clause: one cell of the station bears a screen kept by Information Technology and not by the Sheriff, lit at every hour, and **no citizen is put in that cell save a citizen held for the departure, who is put in no other.** Article 18, Section 8 adds the asking: a citizen may ask that it be covered, the asking is entered, and it is not covered. "The screen is not the light." |
+| How the lottery is drawn | Article 3, Section 5, four new clauses: numbered tokens cut by Mechanical to a pattern the Judge keeps; the vessel shown empty, the tokens counted in aloud, the vessel turned three times, drawn by a watching citizen not of a household that petitioned; the remaining tokens counted out and the counts compared, a disagreement voiding the drawing. The seam: **the Clerk's entry is the only place the name and the number stand together**, and the audit is on counts, not identities. |
+| The naming as a rite | Article 3, Section 10, five new clauses: who holds the child; the name said three times; the archivist's card given into the hand that held the child; nothing given to the Clerk and nothing asked; and a naming withheld for no cause this Section does not name, and never undone. |
+| Stair law | Article 7, new Section 10, "What the Stair Carries, and When It Is Closed": the burden on the inner rail; the load two citizens cannot carry goes by the lift; **a citizen dead is carried down and not up, and no citizen is required to stop and none is hindered who does**; closure of one run only; the hours of the shift turn; a landing market closed for the press. |
+| The deputies by third | Article 7, Section 8, two new clauses stating the three stations as the standing establishment, not fewer than two Peacekeepers to a zone, and a Peacekeeper keeping a vacant Deputy's post with a Deputy's authority and no more. |
+| What the Day of Remembrance is for | Article 20, Section 8(b), one sentence: *"The day is kept because a silo that counts only its living forgets what the living cost it; and what is remembered upon it is not any citizen in particular, but that the silo endured the losing of them, and went on."* Warm, quotable, and about the silo rather than the dead. |
+
+### The artifact layer
+
+See `AUTHENTICITY-2026-10-08.md` for the full proposal and its status table.
+The book now obeys Articles 21 and 23 on its own body: a Placing Page with
+blanks for the floor, the season, the copy number and six yearly comparisons; a
+Notice of a Correction; one struck-and-corrected reading in the body at Article
+18, Section 8(b); three office stamps; a Clerk's sheet setting in Amendment 21;
+a Table of the Amendments; and a colophon.
+
+**Do not "fix" the following.** They are the conceit, not defects:
+
+- The printed Amendment Log ends at **Amendment 20**, and Amendment 21 reaches
+  the reader only on `backmatter/clerks-sheet.tex`. The book was printed before
+  the amendment was ratified.
+- Because of that, the Log's Unamended Provisions list **still carries Article
+  17**, and Amendment 5's note is back in the present tense. The set-in sheet
+  directs the reader to strike Article 17 by hand.
+- Article 18, Section 8(b) reads `\corr{two cycles}{one cycle}` --- a struck
+  word with the true word beside it. The front-matter Notice names that exact
+  place. Used **once**; do not multiply it.
+- `tools/xref.py` now reads `backmatter/clerks-sheet.tex` too, but its
+  Unamended-Provisions check still reads only `amendments.tex`, which is what
+  makes the printed Log self-consistent.

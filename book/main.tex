@@ -10,6 +10,24 @@
 
 \frontmatter
 \input{frontmatter/titlepage}
+
+% The copy's own papers: neither carries a folio, a running head, or any mark
+% of the printer. They are the archive's, not the book's.
+\pagestyle{empty}
+\input{frontmatter/placing}
+\input{frontmatter/correction}
+\cleardoublepage
+\pagestyle{headings}
+
+% The Table is the archivist's, not a publisher's; name it so. \tableofcontents
+% is respelt rather than patched so the two-line heading does not become a
+% two-line running head.
+\renewcommand{\contentsname}{The Order of the Articles,\\and of the Sections Within Them}
+\makeatletter
+\renewcommand\tableofcontents{%
+  \chapter*{\contentsname\markboth{\scshape The Order of the Articles}{}}%
+  \@starttoc{toc}}
+\makeatother
 \tableofcontents
 
 \mainmatter
@@ -40,6 +58,8 @@
 \input{articles/article23}
 
 \appendix
+\input{backmatter/clerks-sheet}
 \input{backmatter/amendments}
+\input{backmatter/colophon}
 
 \end{document}

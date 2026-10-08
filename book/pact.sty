@@ -73,14 +73,14 @@
       \if@mainmatter
         {\normalsize\scshape \@chapapp\ \thechapter\par}%
         \vskip 8\p@
-        {\hrule height 0.4pt width 1.6in}%
+        \rule{1.6in}{0.4pt}%
         \vskip 14\p@
       \fi
     \fi
     \interlinepenalty\@M
     {\Large\scshape #1\par}%
     \vskip 6\p@
-    {\hrule height 0.4pt width 1.6in}%
+    \rule{1.6in}{0.4pt}%
     \vskip 30\p@
   }}
 \def\@makeschapterhead#1{%
@@ -89,7 +89,7 @@
     \interlinepenalty\@M
     {\Large\scshape #1\par}%
     \vskip 6\p@
-    {\hrule height 0.4pt width 1.6in}%
+    \rule{1.6in}{0.4pt}%
     \vskip 30\p@
   }}
 \makeatother
@@ -102,6 +102,30 @@
   {1.5ex \@plus .2ex}%
   {\normalfont\normalsize\scshape}}
 \makeatother
+
+% ---------------------------------------------------------------------------
+% Cross-references.
+%
+% The Pact cites itself in prose ("under Article 17", "under Article 13,
+% Section 6"), never with a bare section mark -- see STYLE.md. These macros
+% print exactly that prose while driving the numbers off \label/\ref, so a
+% renumbering can no longer silently break a citation: LaTeX reports every
+% reference it cannot resolve. Labels are keyed to meaning, not to number
+% (\label{art:crimes}, \label{sec:crimes:offenses-among-the-gravest}).
+%
+%   \artref{art:crimes}                        -> Article 17
+%   \secref{art:labor}{sec:labor:critical-roles-and-order-adjacent-trades}
+%                                              -> Article 13, Section 6
+%   \secrefhere{sec:crimes:form-of-a-grace}    -> Section 6   (same Article)
+%
+% The ~ keeps "Article" and its number on one line.
+\newcommand{\artref}[1]{Article~\ref{#1}}
+\newcommand{\secref}[2]{Article~\ref{#1}, Section~\ref{#2}}
+\newcommand{\secrefhere}[1]{Section~\ref{#1}}
+% Bare numbers, for the two places that cite several sections at once
+% ("Sections 1, 3, 5, or 6") and so cannot use the forms above.
+\newcommand{\artnum}[1]{\ref{#1}}
+\newcommand{\secnum}[1]{\ref{#1}}
 
 \newcommand{\articlenote}[1]{%
   \begingroup
@@ -123,9 +147,105 @@
 \newcommand{\termitem}[1]{\item[]\textbf{#1.}\ }
 
 \renewcommand{\contentsname}{Table of Articles and Sections}
+% Running heads at \footnotesize: an Article's whole title will not sit on a
+% 4.4in measure at text size, and a quieter head suits the register besides.
+% Book.cls's own \ps@headings is replaced rather than patched so that the
+% \chaptermark and \sectionmark set below are not overwritten by it.
+\makeatletter
+\def\ps@headings{%
+  \let\@oddfoot\@empty\let\@evenfoot\@empty
+  \def\@evenhead{{\footnotesize\thepage}\hfil{\footnotesize\slshape\leftmark}}%
+  \def\@oddhead{{\footnotesize\slshape\rightmark}\hfil{\footnotesize\thepage}}%
+  \let\@mkboth\markboth}
+\makeatother
+
 \pagestyle{headings}
 
 \makeatletter
 \renewcommand{\chaptermark}[1]{\markboth{\scshape\@chapapp\ \thechapter}{}}
 \renewcommand{\sectionmark}[1]{\markright{\scshape Section\ \thesection}}
+\makeatother
+
+% ---------------------------------------------------------------------------
+% Running heads: the verso carries the Article and its title, the recto the
+% Section. A reader flipping the book lands somewhere nameable.
+% ---------------------------------------------------------------------------
+\makeatletter
+\renewcommand{\chaptermark}[1]{%
+  \markboth{{\scshape\@chapapp\ \thechapter}\ \textperiodcentered\ {\scshape #1}}{}}
+\makeatother
+
+% ---------------------------------------------------------------------------
+% The artifact layer.
+%
+% Articles 21 and 23 describe how every copy of this Pact is made, marked,
+% placed, compared, corrected and stamped. These macros let the printed book
+% obey its own Articles on its own body. See AUTHENTICITY-2026-10-08.md.
+%
+% Deliberately NOT simulated: foxing, stains, torn edges, aged paper. Wear is
+% what weather did; this layer is only what an office did.
+% ---------------------------------------------------------------------------
+\RequirePackage{graphicx}
+
+% \stamp[angle]{wording} -- a double-ruled small-caps block, set slightly out
+% of true, in the manner of an impression from one of the seal-stamps cut by
+% Mechanical to the pattern the Judge keeps (Article 21). Office wording
+% distinguishes one stamp from another; never ornament.
+\newcommand{\stamp}[2][3]{%
+  \rotatebox{#1}{%
+    \setlength{\fboxrule}{0.7pt}%
+    \setlength{\fboxsep}{4pt}%
+    \fbox{\vbox{\hrule\vskip2.5pt
+      \hbox{\ \normalfont\footnotesize\scshape\spaceskip=0.45em #2\ }%
+      \vskip2.5pt\hrule}}}}
+
+% \stampline{wording} -- the same, centred on its own line with air around it.
+\newcommand{\stampline}[2][3]{%
+  \par\vspace{10pt}\noindent\hfill\stamp[#1]{#2}\hfill\null\par\vspace{10pt}}
+
+% \fillrule{width} -- a ruled blank to be completed by hand. A blank on a
+% printed form is the cheapest proof that the form was ever in use.
+\newcommand{\fillrule}[1]{\leavevmode\hbox to #1{\hrulefill}}
+
+% \corr{superseded}{true} -- a correction carried into this copy against the
+% master copy, as Article 23, Section 8 requires. The superseded word is
+% struck, not removed, and the true word follows in the Clerk's hand. Used
+% exactly once in the body; see the Notice of a Correction in the front
+% matter. Do not multiply it.
+\newcommand{\corr}[2]{%
+  \leavevmode
+  \hbox{\rlap{\raisebox{0.42ex}{\rule{\widthof{#1}}{0.4pt}}}#1}%
+  \nobreak\ {\ttfamily\footnotesize #2}%
+  \nobreak\,{\ttfamily\scriptsize corr.}}
+
+% ---------------------------------------------------------------------------
+% Setting. No microtype on this install, and a 4.4in measure full of long
+% words; loosen the paragraph breaker rather than leave rivers and overfull
+% lines. Ragged bottoms besides: a code printed by a department does not
+% stretch its pages to square them off.
+% ---------------------------------------------------------------------------
+\setlength{\emergencystretch}{1em}
+\tolerance=1500
+\raggedbottom
+
+% Table entries for Articles in small caps rather than bold: the only bold
+% left in the book was in its contents, which is a publisher's habit and not
+% a department's.
+\makeatletter
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \scshape
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil
+      \nobreak\hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
 \makeatother

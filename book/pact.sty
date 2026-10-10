@@ -30,12 +30,19 @@
 
 \setlength{\textwidth}{4.4in}
 \setlength{\textheight}{7in}
-\setlength{\topmargin}{0.15in}
 \setlength{\headheight}{14pt}
 \setlength{\headsep}{0.25in}
 \setlength{\footskip}{0.4in}
-\setlength{\oddsidemargin}{0.55in}
-\setlength{\evensidemargin}{0.35in}
+% The text block is centred on the page, horizontally and vertically. The book
+% is read on a screen, not bound, so there is no gutter to favour and nothing
+% is mirrored. LaTeX measures all three of these from a 1in origin.
+%
+% Across: 6in of paper less 4.4in of text leaves 0.8in a side.
+% Down:   the head (14pt) plus \headsep (0.25in) plus \textheight (7in) is
+%         7.4437in, so 9in of paper leaves 0.7781in above and below.
+\setlength{\oddsidemargin}{-0.2in}
+\setlength{\evensidemargin}{-0.2in}
+\setlength{\topmargin}{-0.2219in}
 \setlength{\marginparwidth}{0pt}
 \setlength{\marginparsep}{0pt}
 \setlength{\parindent}{1.2em}

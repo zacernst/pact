@@ -808,61 +808,34 @@ screenshot by viewers (r/SiloSeries, "Megaton," and others). **Sourcing
 confidence: very high** — this is as close as we get to Howey-adjacent
 authorial intent without the published books themselves.
 
-**Full transcription of Articles 3–13 from the prop text** (numbering,
-phrasing, and clause structure as they appear; gaps marked with [...]):
+**The verbatim transcription has been removed from this file.** It was
+~1,000 words of the prop text of Articles 3--13 reproduced word for word.
+That is production design owned by Apple/AMC, not by Howey, and it is the
+one thing in this repository that was literal copying rather than original
+derivative work — so it came out before the repository was shared
+publicly. See `ABOUT.md` on what this project does and does not reproduce.
 
-> **Article 3** - All citizens must contribute to the collective survival
-> of the silo to the best of their ability throughout their lives,
-> appropriate to their age and skill, as laid out within the Pact, be
-> their work that of the highest citizen or the deepest.
->
-> **Article 4** - All legislative powers shall be vested in the Office of
-> the Mayor and to subsidiary departments. No fewer than two candidates
-> for Mayor of the Silo shall be proposed, with one elected every five
-> years by the process detailed in section 11 who shall work with the
-> dedication and devotion to duty that this most sacred office demands.
->
-> **Article 5** - No person afflicted with The Syndrome may hold a public
-> office of any kind or undertake any responsible work within the Silo
-> that may jeopardize the Citizens of the Silo. Those so afflicted must
-> report their status promptly upon discovery and immediately resign any
-> aforementioned office.
->
-> **Article 6** - Mechanization of the Stair is strictly forbidden to
-> protect the imperative safety and security of all citizens.
->
-> **Article 7** - Deliberate causation of any obstruction, event or
-> hinderance of any citizen in the process of discharging public office of
-> the Silo is a most serious offense.
->
-> **Article 8** - Interference with any aspect of the Circulatory, Energy,
-> or Recycling systems of the Silo is punishable swiftly and severely
-> without trial, by the Officers of Judicial at the implicit command of
-> the Mayor. Representations may be made after the fact by the offender's
-> family, but any subsequent action will not affect the initial term
-> imposed.
->
-> **Article 9** - Emergency power will be provided in accordance with Pact
-> protocol as laid out in the green list, Section 5. All citizens must
-> ensure they maintain a thorough and updating knowledge of emergency
-> protocols.
->
-> **Article 10** - All citizens are personally responsible for noting and
-> maintaining their health by making regular use of the recreational
-> facilities and by attending [...] screenings to which they are invited.
->
-> **Article 11** - All parents of female children must [...] strict
-> attendance at the ritual of Intactica upon achievement [...] their
-> eleventh year, to maintain the vital sufficiency balance within the
-> Silo.
->
-> **Article 12** - The Generator level is absolutely forbidden to citizens
-> other than those directly responsible for maintaining sufficiency for the
-> good of all.
->
-> **Article 13** - No person must ever attempt to go, or request to go,
-> outside the silo for their own safety and that of others. All such
-> requests will be granted but will also be irrevocable.
+Nothing that the drafting relied on is lost. What the transcription was
+*for* is preserved in full below: the Article-by-Article mapping onto our
+own structure, the register and phrasing guidance in section 17, and the
+five findings that actually changed the draft. All 23 Articles are written;
+this was scaffolding, and the scaffolding has served. If a later pass needs
+the source text again, it is on r/SiloSeries (the "Megaton" screenshot
+transcription) and should be consulted there rather than copied back here.
+
+The topics the prop covers, in the prop's own numbering, were: citizens'
+labor obligation (3); the Mayor's legislative power and five-yearly
+elections with no fewer than two candidates (4); the Syndrome as a blanket
+bar on public office and on responsible work (5); the ban on mechanizing
+the Stair (6); obstruction of an officer discharging public office (7);
+interference with the Circulatory, Energy, or Recycling systems, punishable
+without trial, with a family's representations expressly unable to alter
+the term already imposed (8); emergency power under "the green list,
+Section 5" (9); citizens' own charge of their health, by use of the
+recreational facilities and attendance at screenings (10); a girls'
+age-eleven rite, excluded from this project by the user's decision (11);
+the Generator level closed to all but those keeping it (12); and the
+request to go outside, which is always granted and always irrevocable (13).
 
 **Cross-reference and interpretation notes:**
 

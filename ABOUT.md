@@ -16,7 +16,7 @@ and what happens to anyone who asks. And you never get to read it. So I
 tried to find out what writing the whole thing would actually take.
 
 It came out at **23 Articles, 237 Sections, 21 amendments, about 74,400
-words**, typeset as a 231-page book.
+words**, typeset as a 243-page book.
 
 The PDF is [`book/main.pdf`](book/main.pdf).
 
@@ -72,10 +72,10 @@ close reader. Most are about rosters.
   not reproduce it, and the verbatim transcription that was once in
   `CANON.md` has been removed. That text is production design belonging to
   the show, not to this project.
-- **Not finished.** The copy still has no Table of Subjects — the in-world
-  index that would let a citizen, or a reader, actually find a clause in 231
-  pages. That's the next job, and it's the fair criticism the project hasn't
-  yet answered.
+- **Not finished.** It has a Table of Subjects now — the in-world index that
+  lets you find a clause without reading 243 pages — but a legal code is the
+  kind of thing that always has one more inconsistency in it than you have
+  found.
 
 ## One more thing
 

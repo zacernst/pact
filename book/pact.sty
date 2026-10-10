@@ -226,6 +226,67 @@
   \nobreak\,{\ttfamily\scriptsize corr.}}
 
 % ---------------------------------------------------------------------------
+% The Table of Subjects.
+%
+% Article 21, Section 7 requires every printed copy to carry a table of the
+% subjects of this Pact, entered against the Article and the Section where a
+% subject is treated and not against the leaf on which it falls. These macros
+% set it: two columns, and every reference driven off \ref so that renumbering
+% an Article renumbers the table with it.
+%
+% The content is generated -- backmatter/subjects.tex, built by
+% tools/mkindex.py from tools/subjects.tsv. Do not hand-edit the output.
+% ---------------------------------------------------------------------------
+\RequirePackage{multicol}
+
+% A reference: Article and Section, joined by a point. The clerk's compact
+% form, explained in the note at the head of the table.
+\newcommand{\subjref}[2]{\ref{#1}.\ref{#2}}
+\newcommand{\subjart}[1]{\ref{#1}}
+\newcommand{\subjsee}[1]{\emph{See} #1}
+\newcommand{\subjseealso}[1]{\emph{See also} #1}
+
+\newlength{\subjindent}
+\setlength{\subjindent}{1em}
+
+\newcommand{\subjectsopen}{%
+  \begin{multicols}{2}%
+  \footnotesize
+  \raggedright
+  \setlength{\parindent}{0pt}%
+  \setlength{\parskip}{0pt}%
+  \frenchspacing}
+\newcommand{\subjectsclose}{\end{multicols}}
+
+% A letter division. Kept with what follows it: a letter stranded at the foot
+% of a column is the one thing that would make the table look unmade.
+\newcommand{\subjletter}[1]{%
+  \par\penalty-200\vskip 7pt plus 2pt minus 1pt
+  {\normalfont\scshape #1}\nobreak
+  \par\nobreak\vskip 2pt\nobreak}
+
+% A headword and its references. Hanging indent, so a run-over line sits
+% clear of the next headword. A column would rather break here than inside an
+% entry, and a headword keeps its first subentry with it; past that the run of
+% subentries must be breakable, or a long one cannot be set at all.
+\newcommand{\subjentry}[2]{%
+  \par\penalty-100
+  \begingroup
+    \hangindent\subjindent \hangafter1
+    #1\unskip
+    \ifx\relax#2\relax\else, #2\fi\par\nobreak
+  \endgroup}
+
+% A subentry: one level in, and reluctant to part from the one above it.
+\newcommand{\subjsub}[2]{%
+  \begingroup
+    \leftskip\subjindent
+    \hangindent\subjindent \hangafter1
+    \textendash\ #1\unskip
+    \ifx\relax#2\relax\else, #2\fi\par\penalty 150
+  \endgroup}
+
+% ---------------------------------------------------------------------------
 % Setting. No microtype on this install, and a 4.4in measure full of long
 % words; loosen the paragraph breaker rather than leave rivers and overfull
 % lines. Ragged bottoms besides: a code printed by a department does not

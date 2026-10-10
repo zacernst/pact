@@ -1,0 +1,820 @@
+# ---------------------------------------------------------------------------
+# tools/subjects.tsv -- the term table behind the Pact's Table of Subjects.
+#
+# Three tab-separated fields: headword, subentry, references. A headword may
+# repeat; its lines are gathered. See tools/mkindex.py for the reference
+# syntax and regenerate the printed table with:
+#
+#     python3 tools/mkindex.py
+#
+# Headwords are written as a clerk files them -- inverted, so that "the
+# Cleaning" is found at C and not at T. Keep them in the Pact's own words.
+# ---------------------------------------------------------------------------
+
+Accident	in the works	mechanical:accident-in-the-works-and-its-reporting
+Accident	in the workings of the mines	mines:accident-in-the-workings
+Accident	a term in the mines shortened for	crimes:reckoning-of-a-term-in-the-mines
+Aged and infirm, the		health:retirement-and-the-care-of-the-aged-and-infirm health:keeping-of-the-retired
+Aged and infirm, the		+Retirement
+Air	circulation and reclamation of	mechanical:power-circulation-and-reclamation
+Air	stores of	supply:stores-of-water-and-air
+Air	a floor sealed against	emergency:sealing-of-a-floor
+Air	an emergency declared for	emergency:declaration-of-emergency
+Airlock, the		cleaning:airlock-and-its-approach cleaning:airlock-and-the-departure
+Airlock, the	approach to	cleaning:airlock-and-its-approach
+Airlock, the	the departure through	cleaning:airlock-and-the-departure
+Airlock, the	the chamber after	cleaning:chamber-after
+Airlock, the	keeping of, and the lab	cleaning:cleaning-lab-and-its-keeping
+Airlock, the	a sentence carried to	judicial:entry-and-carrying-out-of-a-sentence
+Amendment		art:amendment
+Amendment	the process of	amendment:process-of-amendment assembly:amendment-of-this-pact
+Amendment	the limits on	amendment:limits-on-amendment
+Amendment	the petition for	amendment:form-of-a-petition-for-amendment amendment:counting-of-the-names
+Amendment	the making known of	amendment:making-known-of-a-proposed-amendment
+Amendment	the vote upon	assembly:vote-and-its-counting assembly:amendment-of-this-pact
+Amendment	the printing of	amendment:printing-of-a-ratified-amendment
+Amendment	one that fails, and one brought again	amendment:amendment-that-fails-and-an-amendment-brought-again
+Amendment	words that contradict what is written	amendment:words-that-contradict-what-is-already-written
+Amendment	the Table of Subjects altered by	records:copying-and-keeping-of-this-pact
+Amendment		+Pact,_this
+Amendment Log, the		records:amendment-log amendment:amendment-log
+Amendment Log, the	kept in every printed copy	records:copying-and-keeping-of-this-pact amendment:printing-of-a-ratified-amendment
+Animals	sanctioned, kept by a citizen	supply:sanctioned-animals-kept-by-citizens
+Animals	kept by Supply, and their slaughter	supply:animals-kept-and-their-slaughter
+Animals	livestock and hydroponics	supply:hydroponics-and-the-keeping-of-livestock
+Animals	in a dwelling	housing:keeping-of-dwelling-quarters
+Apparatus of the Silo's keeping		publicorder:apparatus-of-the-silos-keeping
+Apparatus of the Silo's keeping		+Sensors
+Appeal, where none is had		records:copying-and-keeping-of-this-pact labor:rights-and-duties-of-the-shadowed publicorder:classification-of-a-relic
+Aptitude	the testing of	labor:testing-of-aptitude
+Aptitude	at the approach of majority	schooling:aptitude-the-approach-of-majority-and-the-passage-into-labor
+Aptitude	the record of	schooling:records-of-schooling-and-attendance
+Aptitude	weighed in reassignment	labor:reassignment-and-retirement
+Archive, the		founding:terms-this-pact-uses records:keeping-of-records
+Archive, the	of Judicial	judicial:archive-of-judicial
+Archive, the	the classes of record in	records:classes-of-record-and-their-keeping
+Archive, the	a citizen's reading of	records:citizens-reading-of-the-citizens-own-record
+Archivist of Judicial, the		records:classes-of-record-and-their-keeping
+Archivist of Judicial, the	and the Occupant Card	records:occupant-card
+Archivist of Judicial, the	and the copies of this Pact	records:copying-and-keeping-of-this-pact
+Archivist of Judicial, the	and a citizen's own record	records:citizens-reading-of-the-citizens-own-record
+Archivist of Judicial, the	and the Table of Subjects	records:copying-and-keeping-of-this-pact
+Arrest		sheriff:arrest-and-the-holding-of-a-citizen
+Arrest	and the warrant	judicial:warrant-and-the-return-of-a-search
+Arrest	for obstruction of an officer	publicorder:obstruction-of-an-officer
+Arrest	an officer's own	judicial:officers-and-their-discipline
+Assembly of Citizens, the		art:assembly
+Assembly of Citizens, the	who sits in it	assembly:assembly-of-citizens
+Assembly of Citizens, the	the common halls and the gathering	assembly:common-halls-and-the-gathering
+Assembly of Citizens, the	a hearing before	assembly:hearing-before-the-assembly
+Assembly of Citizens, the	powers of confirmation and removal	assembly:assemblys-powers-of-confirmation-and-removal
+Assembly of Citizens, the	and the amendment of this Pact	assembly:amendment-of-this-pact
+Assembly of Citizens, the	the vote and its counting	assembly:vote-and-its-counting
+Assembly of Citizens, the	the order of business	assembly:order-of-business
+Assembly of Citizens, the	the Mayor before	mayor:mayor-and-the-assembly
+Assembly of Citizens, the	the Deputy before	succession:deputy-in-the-assembly-and-before-judicial
+Assembly present, the		founding:terms-this-pact-uses assembly:vote-and-its-counting
+Barter without chits		commerce:barter-without-chits
+Barter without chits		+Chit,_the
+Belief, gatherings of		assembly:gatherings-of-belief
+Belief, gatherings of	and the mourning	health:giving-to-the-soil-and-the-mourning
+Birth	the right of, and the span allowed	marriage:right-of-birth-and-the-span-allowed
+Birth	unlicensed, and the answering for it	marriage:unsanctioned-children-and-the-answering-for-unlicensed-birth
+Birth	childbirth and the nursery floor	health:childbirth-and-the-nursery-floor
+Birth	the naming after	citizenship:naming-of-children marriage:naming
+Birth		+Lottery,_the
+Cafeterias		sheriff:cafeterias-and-other-common-areas
+Cafeterias	a cleaning witnessed in	cleaning:public-witnessing-of-a-cleaning
+Cafeterias	the ration drawn in	supply:drawing-of-the-ration
+Care a citizen must take, the		health:care-a-citizen-must-take
+Cells of the station, the		sheriff:station-and-its-cells
+Cells of the station, the	a citizen held in	sheriff:arrest-and-the-holding-of-a-citizen
+Cells of the station, the	the days before a departure	cleaning:days-between-the-request-and-the-departure
+Census		=Rolls,_the
+Chit, the		art:commerce
+Chit, the	the earning of	commerce:chit-and-the-earning-of-chits
+Chit, the	the thing itself, and its marking	commerce:chit-itself
+Chit, the	the chit-keepers and their rolls	commerce:chit-keepers-and-the-rolls-they-keep
+Chit, the	debt and the settling of it	commerce:debt-and-the-settling-of-it
+Chit, the	what a thing may be asked for	commerce:what-a-thing-may-be-asked-for
+Chit, the	the Silo's own purchases	commerce:silos-own-purchases
+Chit, the	barter where there are none	commerce:barter-without-chits
+Chit, the	the Deputy Mayor's	succession:deputys-own-trade-dwelling-and-chits
+Chit, the	a term in the mines reckoned in	crimes:reckoning-of-a-term-in-the-mines
+Chit-keepers, the		commerce:chit-keepers-and-the-rolls-they-keep commerce:chit-itself
+Chit-keepers, the	and debt	commerce:debt-and-the-settling-of-it
+Chit-keepers, the	and the market's trust	commerce:keeping-of-the-markets-trust
+Citizen, a	the standing of	citizenship:standing-of-a-citizen
+Citizen, a	bound by this Pact	founding:citizen-bound
+Citizen, a	the oath of	citizenship:citizens-oath citizenship:ceremony-of-the-oath
+Citizen, a	the labor owed by	labor:labor-a-citizen-owes
+Citizen, a	the care to be taken of the body	health:care-a-citizen-must-take
+Citizen, a	in danger of the citizen's own hand	health:citizen-in-danger-of-own-hand
+Citizen, a	whose body or mind cannot bear the labor	labor:citizen-who-cannot-bear-the-labor
+Citizen, a	the reading of the citizen's own record	records:citizens-reading-of-the-citizens-own-record
+Citizen, a	the peace between citizens	sheriff:keeping-of-the-peace-between-citizens
+Citizen, a	an offense against another	crimes:offenses-against-another-citizen
+Citizen, a	that none go unsheltered	housing:that-no-citizen-go-unsheltered
+Cleaning, the		art:cleaning
+Cleaning, the	the request and the right of a citizen	cleaning:request-and-the-right-of-a-citizen
+Cleaning, the	the obligation to clean	cleaning:obligation-to-clean-and-the-sentencing-to-cleaning
+Cleaning, the	the sentencing to	cleaning:obligation-to-clean-and-the-sentencing-to-cleaning crimes:offenses-among-the-gravest
+Cleaning, the	the suits and the seals	cleaning:suits-and-the-seals
+Cleaning, the	the fitting of the suit	cleaning:fitting-of-the-suit
+Cleaning, the	the days between request and departure	cleaning:days-between-the-request-and-the-departure
+Cleaning, the	the airlock and the departure	cleaning:airlock-and-the-departure
+Cleaning, the	the public witnessing of	cleaning:public-witnessing-of-a-cleaning
+Cleaning, the	the ritual and the meaning	cleaning:ritual-and-the-meaning
+Cleaning, the	the lab and its keeping	cleaning:cleaning-lab-and-its-keeping
+Cleaning, the	the chamber after	cleaning:chamber-after
+Cleaning, the	the record of the dead	it:sensors-the-wallscreen-and-the-record-of-the-dead health:death-and-the-determination-of-cause
+Cleaning, the	held in abeyance in emergency	emergency:holding-of-a-final-request-in-abeyance
+Cleaning, the		+Request,_the_final
+Clerk of Judicial, the		judicial:sittings-of-judicial-and-the-clerk
+Clerk of Judicial, the	at a hearing	judicial:conduct-of-a-hearing
+Clerk of Judicial, the	at the entry of a sentence	judicial:entry-and-carrying-out-of-a-sentence
+Clerk of Judicial, the	and the naming	marriage:naming
+Clerk of Judicial, the	and the degrees of kin	marriage:degrees-within-which-a-marriage-is-not-made
+Clerk of Judicial, the	and the lottery	marriage:administration-of-the-lottery
+Clerk of Judicial, the	and the counting of names on a petition	amendment:counting-of-the-names amendment:form-of-a-petition-for-amendment
+Clerk of Judicial, the	and the weights and measures	commerce:weights-and-measures-of-trade
+Clock, the Silo's own		it:silos-own-clock
+Clock, the Silo's own	the day it measures	founding:terms-this-pact-uses
+Common halls, the		assembly:common-halls-and-the-gathering
+Common halls, the	the gathering in	assembly:assembly-of-citizens
+Common halls, the	gatherings of belief in	assembly:gatherings-of-belief
+Common rooms of a floor, the		housing:common-rooms-of-a-floor
+Conception, the span allowed for		marriage:right-of-birth-and-the-span-allowed marriage:lottery-for-children
+Conception, the span allowed for	and the measure	marriage:fitting-and-keeping-of-the-measure
+Confirmation	by the Mayor	mayor:mayors-powers-of-confirmation-and-appointment
+Confirmation	by the Assembly	assembly:assemblys-powers-of-confirmation-and-removal
+Confirmation	of a Head of a Department	it:trades-of-the-department-and-the-naming-of-the-head mines:charge-of-mines
+Contract of shadowing, the		labor:contract-of-shadowing
+Contract of shadowing, the	the conduct under it	labor:conduct-of-a-shadowing
+Contract of shadowing, the	the ending of it	labor:ending-of-a-shadowing
+Copying of this Pact, the		records:copying-and-keeping-of-this-pact
+Copying of this Pact, the	a ratified amendment printed into	amendment:printing-of-a-ratified-amendment
+Correction	the three measures of	crimes:three-measures-of-correction
+Correction	of a child	schooling:correction-of-a-child
+Correction		+Grace
+Correction		+Mines,_the
+Count of the rolls, the		citizenship:count-of-the-rolls
+Count of the rolls, the	the reconciling before it	citizenship:reconciling-of-the-rolls
+Count of the rolls, the	and the Silo's number	marriage:keeping-of-the-silos-number
+Course of study, the		schooling:course-of-study
+Cycle		founding:terms-this-pact-uses
+Day		founding:terms-this-pact-uses
+Day	as the clock keeps it	it:silos-own-clock
+Days the Silo keeps, the		assembly:days-the-silo-keeps
+Days the Silo keeps, the	the Forgiveness Holiday	mayor:forgiveness-holiday
+Days the Silo keeps, the	the rest days	schooling:rest-days-and-the-school-year
+Dead, the	the record of	it:sensors-the-wallscreen-and-the-record-of-the-dead
+Dead, the	the determination of the cause	health:death-and-the-determination-of-cause
+Dead, the	the giving to the soil	health:giving-to-the-soil-and-the-mourning
+Dead, the	the return of, and the household's stores	supply:stores-of-a-household-upon-a-death-and-the-return-of-the-dead
+Dead, the	the closing of a name	citizenship:death-and-the-closing-of-a-name
+Death	and the closing of a name	citizenship:death-and-the-closing-of-a-name
+Death	the determination of the cause of	health:death-and-the-determination-of-cause
+Death	the word to the household	health:word-to-the-household
+Death	the mourning	health:giving-to-the-soil-and-the-mourning
+Death	the stores of a household upon	supply:stores-of-a-household-upon-a-death-and-the-return-of-the-dead
+Death	of a spouse, and the widowed	marriage:widowed-the-orphaned-and-the-duties-of-kin
+Death	in the works	mechanical:accident-in-the-works-and-its-reporting mines:accident-in-the-workings
+Debt		commerce:debt-and-the-settling-of-it
+Debt	not inherited	supply:stores-of-a-household-upon-a-death-and-the-return-of-the-dead
+Degrees within which a marriage is not made		marriage:degrees-within-which-a-marriage-is-not-made
+Department, a		founding:terms-this-pact-uses
+Department, a	the Head of, and the naming	it:trades-of-the-department-and-the-naming-of-the-head
+Department, a	confirmed by the Mayor	mayor:mayors-powers-of-confirmation-and-appointment
+Department, a	the removal of a Head	assembly:assemblys-powers-of-confirmation-and-removal
+Deputies of the Sheriff, the		sheriff:deputies-and-the-floors
+Deputies of the Sheriff, the	the trades of the office	sheriff:trades-of-the-sheriffs-office
+Deputy Mayor, the		art:succession
+Deputy Mayor, the	the office of	succession:office-of-deputy-mayor mayor:office-of-deputy-mayor-and-succession
+Deputy Mayor, the	the assumption of the mayoralty	succession:deputy-mayors-assumption-of-the-mayoralty
+Deputy Mayor, the	the election of	succession:deputy-mayors-election-and-succession
+Deputy Mayor, the	what may be signed, and what may not	succession:what-the-deputy-may-sign
+Deputy Mayor, the	the handover of the office	succession:handover-of-the-mayors-office
+Deputy Mayor, the	the Deputy's own trade and dwelling	succession:deputys-own-trade-dwelling-and-chits
+Deputy Mayor, the	the standing orders of a Mayor who is gone	succession:standing-orders-of-a-mayor-who-is-gone
+Deputy Mayor, the	in the Assembly and before Judicial	succession:deputy-in-the-assembly-and-before-judicial
+Deputy Mayor, the	the offense of	crimes:offense-of-an-officer
+Despair, the spreading of		publicorder:rumor-despair-and-the-spread-of-discontent
+Digging, the prohibition against		mechanical:structural-work-and-the-prohibition-against-digging
+Digging, the prohibition against	and the winning of ore	mines:two-hundred-foot-radius mines:winning-of-ore
+Discipline of officers, the		judicial:officers-and-their-discipline crimes:offense-of-an-officer
+Discontent, the spread of		publicorder:rumor-despair-and-the-spread-of-discontent
+Dispatch, the		records:porters-roll-and-the-dispatch
+Dispatch, the	and the seal	records:seal
+Dissolution of a marriage, the		marriage:dissolution-of-a-marriage
+Dissolution of a marriage, the	and the dwelling	housing:petition-and-the-assignment
+Distance, the measuring of		mines:measuring-of-distance mines:two-hundred-foot-radius
+Down Deep, the		founding:terms-this-pact-uses housing:zones-and-the-division-of-the-silo
+Down Deep, the	the trades of	mechanical:trades-of-the-down-deep
+Dwelling, a	the keeping of	housing:keeping-of-dwelling-quarters
+Dwelling, a	what is private in, and what is not	housing:what-is-private-in-a-dwelling
+Dwelling, a	the roll of dwellings	housing:roll-of-dwellings
+Dwelling, a	the petition and the assignment	housing:petition-and-the-assignment
+Dwelling, a	the taking-up and the leaving of	housing:taking-up-and-the-leaving-of-a-dwelling
+Dwelling, a	the systems of, and their keeping	housing:dwellings-systems-and-their-keeping
+Dwelling, a	the common rooms of the floor	housing:common-rooms-of-a-floor
+Dwelling, a	that no citizen go unsheltered	housing:that-no-citizen-go-unsheltered
+Dwelling, a	the Deputy Mayor's	succession:deputys-own-trade-dwelling-and-chits
+Dwelling, a	searched upon a warrant	judicial:warrant-and-the-return-of-a-search
+Election	for the next Mayor	succession:election-for-the-next-mayor
+Election	of a Deputy Mayor	succession:deputy-mayors-election-and-succession
+Election	the vote and its counting	assembly:vote-and-its-counting
+Election	the seating that follows	mayor:seating-of-a-mayor-and-the-oaths-of-office
+Emergency		art:emergency
+Emergency	the declaration of	emergency:declaration-of-emergency
+Emergency	the Mayor's authority in	mayor:mayors-orders-and-emergency-authority
+Emergency	the green list	emergency:green-list
+Emergency	the duration and the end of	emergency:duration-and-the-end-of-emergency
+Emergency	the announcement of	emergency:announcement-of-an-emergency
+Emergency	the sealing of a floor	emergency:sealing-of-a-floor
+Emergency	the ration in	emergency:ration-in-emergency
+Emergency	the labor of	emergency:labor-of-emergency
+Emergency	a final request held in abeyance	emergency:holding-of-a-final-request-in-abeyance
+Emergency	the necessity and the restraint	emergency:necessity-and-the-restraint
+Emergency	the lifting of	emergency:lifting-of-an-emergency
+Evidence and things seized		judicial:evidence-and-things-seized
+Evidence and things seized	a relic examined as	it:examination-of-a-relic
+Examination	of a relic	it:examination-of-a-relic
+Examination	the yearly, of the young	schooling:yearly-examination
+Examination	of a citizen by a physician	health:charge-and-the-physicians labor:citizen-who-cannot-bear-the-labor
+Examination	of a body after death	health:death-and-the-determination-of-cause
+Farms, the	and the rotation	supply:farms-and-the-rotation
+Farms, the	the water for	supply:water-for-the-farms
+Farms, the	hydroponics	supply:hydroponics-and-the-keeping-of-livestock
+Farms, the	the reckoning of the stores	supply:reckoning-of-the-stores
+Farms, the	the giving to the soil	health:giving-to-the-soil-and-the-mourning
+Fitness for a trade of trust		health:fitness-for-trades-of-trust-and-the-syndrome
+Fitness for a trade of trust	and the Syndrome	health:fitness-for-trades-of-trust-and-the-syndrome labor:trades-of-trust
+Floor, a	the common rooms of	housing:common-rooms-of-a-floor
+Floor, a	the deputies of	sheriff:deputies-and-the-floors
+Floor, a	the sealing of	emergency:sealing-of-a-floor
+Floor, a	the notices posted on	sheriff:posted-notices
+Floor, a	the nursery	health:childbirth-and-the-nursery-floor
+Floor, a	the floors of the Infirmary	health:floors-and-stations-of-the-infirmary
+Forbidden word, the		publicorder:forbidden-word
+Forbidden word, the	among the gravest offenses	crimes:offenses-among-the-gravest
+Forgiveness Holiday, the		mayor:forgiveness-holiday
+Forgiveness Holiday, the	and the weighing of a grace	crimes:weighing-between-grace-and-the-mines
+Forgiveness Holiday, the	a relic given up upon	publicorder:relics-of-the-time-before
+Founding, the		art:founding
+Founding, the	the recitation of	founding:recitation-of-the-founding
+Founding, the	the teaching of, and its limits	schooling:founding-and-the-limits-of-instruction
+Founding, the	false teaching of	publicorder:false-teaching-of-the-founding-and-the-past
+Founding, the	the examination upon	schooling:yearly-examination
+Freight lift, the		mechanical:freight-lift
+Freight lift, the	the log of	records:freight-lift-log
+Freight lift, the	the ration carried by	supply:ration supply:stations-of-supply
+Generator, the	the shifts and the tending of	mechanical:shifts-and-the-tending-of-the-generator
+Generator, the	power, circulation, and reclamation	mechanical:power-circulation-and-reclamation
+Generator, the	and the servers	it:servers-and-their-keeping
+Goods	the sale of	commerce:marketplace-and-the-sale-of-goods
+Goods	what may be asked for	commerce:what-a-thing-may-be-asked-for
+Goods	carried by the lift	mechanical:freight-lift records:freight-lift-log
+Goods	carried by a porter	records:porters-roll-and-the-dispatch
+Grace		founding:terms-this-pact-uses crimes:three-measures-of-correction
+Grace	of a first offense	crimes:grace-of-a-first-offense
+Grace	the form of	crimes:form-of-a-grace
+Grace	the weighing between grace and the mines	crimes:weighing-between-grace-and-the-mines
+Grace	on the Forgiveness Holiday	mayor:forgiveness-holiday
+Gravest, the		founding:terms-this-pact-uses crimes:offenses-among-the-gravest
+Gravest, the	and the obligation to clean	cleaning:obligation-to-clean-and-the-sentencing-to-cleaning
+Green list, the		founding:terms-this-pact-uses emergency:green-list
+Green list, the	and the order of business	assembly:order-of-business
+Green list, the	upon the lifting of an emergency	emergency:lifting-of-an-emergency
+Handover of the Mayor's office, the		succession:handover-of-the-mayors-office
+Head of a Department, the		it:trades-of-the-department-and-the-naming-of-the-head
+Head of a Department, the	of Mechanical	mechanical:charge-of-mechanical
+Head of a Department, the	of Mines	mines:charge-of-mines
+Head of a Department, the	of Supply	supply:charge-of-supply
+Head of a Department, the	of Information Technology	it:charge-of-information-technology
+Head of a Department, the	of Housing	housing:charge-of-housing
+Head of a Department, the	of Schooling	schooling:charge-of-schooling
+Head of a Department, the	a trade of trust	labor:trades-of-trust
+Hearing, a	before Judicial	judicial:conduct-of-a-hearing
+Hearing, a	the bringing of a matter	judicial:bringing-of-a-matter-before-judicial
+Hearing, a	the judgment and the sentence	judicial:judgment-and-sentence
+Hearing, a	before the Assembly	assembly:hearing-before-the-assembly
+Hearing, a	the sittings of Judicial	judicial:sittings-of-judicial-and-the-clerk
+Holding of a citizen, the		sheriff:arrest-and-the-holding-of-a-citizen sheriff:station-and-its-cells
+Household, a		founding:terms-this-pact-uses
+Household, a	the making of	marriage:sanctioning-of-a-relationship-and-the-making-of-a-household
+Household, a	the naming within	marriage:naming
+Household, a	the duty to a ward	marriage:ward-and-the-households-duty
+Household, a	the widowed, the orphaned, and kin	marriage:widowed-the-orphaned-and-the-duties-of-kin
+Household, a	the dwelling of	housing:petition-and-the-assignment housing:taking-up-and-the-leaving-of-a-dwelling
+Household, a	the ration of	supply:drawing-of-the-ration
+Household, a	the word to, upon illness or death	health:word-to-the-household
+Household, a	the stores of, upon a death	supply:stores-of-a-household-upon-a-death-and-the-return-of-the-dead
+Housing		art:housing
+Housing	the charge of	housing:charge-of-housing
+Housing	the zones and the division of the Silo	housing:zones-and-the-division-of-the-silo
+Hydroponics		supply:hydroponics-and-the-keeping-of-livestock
+Hydroponics	the water for	supply:water-for-the-farms
+Illness	communicable, and the isolation of the sick	health:communicable-illness-and-the-isolation-of-the-sick
+Illness	the word to the household	health:word-to-the-household
+Illness	a child kept from school by	schooling:ages-of-instruction schooling:rest-days-and-the-school-year
+Illness	a citizen who cannot bear the labor	labor:citizen-who-cannot-bear-the-labor
+Infirmary, the		founding:terms-this-pact-uses health:charge-and-the-physicians
+Infirmary, the	the floors and stations of	health:floors-and-stations-of-the-infirmary
+Infirmary, the	the nursery floor	health:childbirth-and-the-nursery-floor
+Infirmary, the	the measure fitted at	marriage:fitting-and-keeping-of-the-measure
+Infirmary, the	the keeping of the retired	health:keeping-of-the-retired
+Information Technology		art:it
+Information Technology	the charge of	it:charge-of-information-technology
+Information Technology	the licensing of dangerous instruments	it:licensing-of-dangerous-instruments
+Information Technology	radios and the Silo's word	it:radios-and-the-silos-word
+Information Technology	the sensors and the wallscreen	it:sensors-the-wallscreen-and-the-record-of-the-dead
+Information Technology	relics of craft and contrivance	it:relics-of-craft-and-contrivance
+Information Technology	the examination of a relic	it:examination-of-a-relic
+Information Technology	the trades of	it:trades-of-information-technology it:trades-of-the-department-and-the-naming-of-the-head
+Information Technology	the rolls of license	it:rolls-of-license-and-their-keeping
+Information Technology	the stations of official word	it:stations-of-official-word
+Information Technology	the servers and their keeping	it:servers-and-their-keeping
+Information Technology	the Silo's own clock	it:silos-own-clock
+Instruments	dangerous, and their licensing	it:licensing-of-dangerous-instruments
+Instruments	restricted	publicorder:restricted-instruments-and-devices
+Instruments	the rolls of license for	it:rolls-of-license-and-their-keeping
+Instruments	tools and materials	mechanical:tools-materials-and-their-licensing
+Isolation of the sick, the		health:communicable-illness-and-the-isolation-of-the-sick
+Judge, the		judicial:charge-and-the-judge
+Judge, the	the judgment and the sentence	judicial:judgment-and-sentence
+Judge, the	rulings where this Pact is silent	judicial:rulings-where-this-pact-is-silent judicial:petition-for-a-ruling-where-this-pact-is-silent
+Judge, the	the conduct of a hearing	judicial:conduct-of-a-hearing
+Judge, the	the warrant	judicial:warrant-and-the-return-of-a-search
+Judge, the	the weighing between grace and the mines	crimes:weighing-between-grace-and-the-mines
+Judge, the	the classification of a relic	publicorder:classification-of-a-relic
+Judge, the	the seating of a Mayor	mayor:seating-of-a-mayor-and-the-oaths-of-office
+Judge, the	the offense of an officer	crimes:offense-of-an-officer
+Judicial		art:judicial
+Judicial	the charge of	judicial:charge-and-the-judge
+Judicial	the officers of	judicial:officers-of-judicial
+Judicial	the archive of	judicial:archive-of-judicial
+Judicial	the sittings of, and the clerk	judicial:sittings-of-judicial-and-the-clerk
+Judicial	the bringing of a matter before	judicial:bringing-of-a-matter-before-judicial
+Judicial	evidence and things seized	judicial:evidence-and-things-seized
+Judicial	the entry and carrying out of a sentence	judicial:entry-and-carrying-out-of-a-sentence
+Judicial	the officers and their discipline	judicial:officers-and-their-discipline
+Judicial	the Mayor and	mayor:mayor-and-judicial
+Judicial	the Deputy before	succession:deputy-in-the-assembly-and-before-judicial
+Judicial	coordination with Mines	mines:coordination-with-mechanical-and-judicial
+Judgment and sentence		judicial:judgment-and-sentence
+Kin	the duties of	marriage:widowed-the-orphaned-and-the-duties-of-kin
+Kin	the degrees within which a marriage is not made	marriage:degrees-within-which-a-marriage-is-not-made
+Kin	and the keeping of the retired	health:keeping-of-the-retired
+Labor		art:labor
+Labor	what a citizen owes	labor:labor-a-citizen-owes
+Labor	the testing of aptitude	labor:testing-of-aptitude
+Labor	the three manners of entering a trade	labor:three-manners-of-entering-a-trade
+Labor	mundane, and the simple trades	labor:mundane-labor-and-the-simple-trades
+Labor	skilled trades and full shadowing	labor:skilled-trades-and-full-shadowing
+Labor	the trades of trust	labor:trades-of-trust
+Labor	the Silo's need for hands	labor:silos-need-for-hands
+Labor	reassignment and retirement	labor:reassignment-and-retirement
+Labor	the passage into, at majority	schooling:aptitude-the-approach-of-majority-and-the-passage-into-labor
+Labor	of a citizen who cannot bear it	labor:citizen-who-cannot-bear-the-labor
+Labor	in emergency	emergency:labor-of-emergency
+Labor	in the mines, as a sentence	crimes:reckoning-of-a-term-in-the-mines
+Landings, the		sheriff:stair-and-the-landings
+Landings, the	the closing of the stair	sheriff:carrying-and-closing-of-the-stair
+Landings, the	notices posted on	sheriff:posted-notices
+Landings, the	an announcement cried on	emergency:announcement-of-an-emergency
+Landings, the	the market stalls on	commerce:market-days-and-the-stalls
+License		founding:terms-this-pact-uses
+License	of a dangerous instrument	it:licensing-of-dangerous-instruments
+License	the rolls of, and their keeping	it:rolls-of-license-and-their-keeping
+License	of tools and materials	mechanical:tools-materials-and-their-licensing
+License	of a radio	it:radios-and-the-silos-word
+License	to do work for another	commerce:work-a-citizen-does-for-another
+License	to bear a child	marriage:lottery-for-children marriage:right-of-birth-and-the-span-allowed
+Likeness, the making of a		publicorder:writing-likeness-and-the-wall
+Limits on amendment, the		amendment:limits-on-amendment
+Livestock		supply:hydroponics-and-the-keeping-of-livestock supply:animals-kept-and-their-slaughter
+Log	the Amendment Log	records:amendment-log amendment:amendment-log
+Log	the freight lift log	records:freight-lift-log
+Log	the porters' roll and the dispatch	records:porters-roll-and-the-dispatch
+Lottery, the	for children	marriage:lottery-for-children
+Lottery, the	the administration of	marriage:administration-of-the-lottery
+Lottery, the	the span allowed for conception	marriage:right-of-birth-and-the-span-allowed
+Lottery, the	the measure, and its removal	marriage:fitting-and-keeping-of-the-measure
+Lottery, the	and the Silo's number	marriage:keeping-of-the-silos-number
+Lottery, the	a birth outside of	marriage:unsanctioned-children-and-the-answering-for-unlicensed-birth
+Lottery, the	and the nursery floor	health:childbirth-and-the-nursery-floor
+Majority		founding:terms-this-pact-uses citizenship:standing-of-a-citizen
+Majority	the approach of	schooling:aptitude-the-approach-of-majority-and-the-passage-into-labor
+Majority	the oath taken at	citizenship:ceremony-of-the-oath
+Majority	and the Assembly	assembly:assembly-of-citizens
+Marketplace, the		commerce:marketplace-and-the-sale-of-goods
+Marketplace, the	the market days and the stalls	commerce:market-days-and-the-stalls
+Marketplace, the	what a thing may be asked for	commerce:what-a-thing-may-be-asked-for
+Marketplace, the	the keeping of the market's trust	commerce:keeping-of-the-markets-trust
+Marketplace, the	the weights and measures of trade	commerce:weights-and-measures-of-trade
+Marketplace, the	barter without chits	commerce:barter-without-chits
+Marriage		art:marriage
+Marriage	the bond	marriage:marriage-bond
+Marriage	the sanctioning of a relationship	marriage:sanctioning-of-a-relationship-and-the-making-of-a-household
+Marriage	the degrees within which none is made	marriage:degrees-within-which-a-marriage-is-not-made
+Marriage	the dissolution of	marriage:dissolution-of-a-marriage
+Marriage	and the lottery	marriage:lottery-for-children
+Marriage	the naming	marriage:naming
+Marriage	upon the rolls	citizenship:keeping-of-the-rolls
+Marriage	and the dwelling	housing:petition-and-the-assignment
+Master of a shadow, the		labor:conduct-of-a-shadowing labor:masters-own-standing
+Master of a shadow, the	the contract	labor:contract-of-shadowing
+Master of a shadow, the	the ending of a shadowing	labor:ending-of-a-shadowing
+Master of a shadow, the	the rights and duties of the shadowed	labor:rights-and-duties-of-the-shadowed
+Mayor, the		art:mayor
+Mayor, the	the office of	mayor:office-of-mayor
+Mayor, the	the powers of confirmation and appointment	mayor:mayors-powers-of-confirmation-and-appointment
+Mayor, the	orders and emergency authority	mayor:mayors-orders-and-emergency-authority
+Mayor, the	and Judicial	mayor:mayor-and-judicial
+Mayor, the	and the Assembly	mayor:mayor-and-the-assembly
+Mayor, the	the Deputy Mayor and succession	mayor:office-of-deputy-mayor-and-succession succession:deputy-mayors-assumption-of-the-mayoralty
+Mayor, the	the Forgiveness Holiday	mayor:forgiveness-holiday
+Mayor, the	the seating of, and the oaths of office	mayor:seating-of-a-mayor-and-the-oaths-of-office
+Mayor, the	the election for the next	succession:election-for-the-next-mayor
+Mayor, the	the handover of the office	succession:handover-of-the-mayors-office
+Mayor, the	the standing orders of one who is gone	succession:standing-orders-of-a-mayor-who-is-gone
+Mayor, the	the removal of	assembly:assemblys-powers-of-confirmation-and-removal
+Mayor, the	the right of entry of	it:servers-and-their-keeping
+Measure, the		founding:terms-this-pact-uses
+Measure, the	the fitting and keeping of	marriage:fitting-and-keeping-of-the-measure
+Measure, the	the removal of, upon a lottery won	marriage:lottery-for-children
+Measures of correction, the three		crimes:three-measures-of-correction
+Mechanical		art:mechanical
+Mechanical	the charge of	mechanical:charge-of-mechanical
+Mechanical	power, circulation, and reclamation	mechanical:power-circulation-and-reclamation
+Mechanical	the freight lift	mechanical:freight-lift
+Mechanical	structural work, and digging	mechanical:structural-work-and-the-prohibition-against-digging
+Mechanical	tools, materials, and their licensing	mechanical:tools-materials-and-their-licensing
+Mechanical	the trades of the Down Deep	mechanical:trades-of-the-down-deep
+Mechanical	the works that are not spoken of	mechanical:works-that-are-not-spoken-of
+Mechanical	the shifts and the generator	mechanical:shifts-and-the-tending-of-the-generator
+Mechanical	accident in the works	mechanical:accident-in-the-works-and-its-reporting
+Mechanical	coordination with Mines	mines:coordination-with-mechanical-and-judicial
+Mids, the		founding:terms-this-pact-uses housing:zones-and-the-division-of-the-silo
+Mines, the		art:mines
+Mines, the	the charge of	mines:charge-of-mines
+Mines, the	the winning of ore	mines:winning-of-ore
+Mines, the	the two-hundred-foot radius	mines:two-hundred-foot-radius
+Mines, the	the measuring of distance	mines:measuring-of-distance
+Mines, the	coordination with Mechanical and Judicial	mines:coordination-with-mechanical-and-judicial
+Mines, the	the trades of	mines:trades-of-mines
+Mines, the	the shifts and the shoring	mines:shifts-and-the-shoring
+Mines, the	accident in the workings	mines:accident-in-the-workings
+Mines, the	offenses answered by	crimes:offenses-answered-by-the-mines
+Mines, the	the reckoning of a term in	crimes:reckoning-of-a-term-in-the-mines
+Mines, the	the weighing between grace and	crimes:weighing-between-grace-and-the-mines
+Mines, the	a sentence entered and carried out	judicial:entry-and-carrying-out-of-a-sentence
+Mourning, the		health:giving-to-the-soil-and-the-mourning
+Mundane labor		labor:mundane-labor-and-the-simple-trades
+Naming, the	of a child	citizenship:naming-of-children marriage:naming
+Naming, the	upon the rolls	citizenship:keeping-of-the-rolls
+Naming, the	of a Head of a Department	it:trades-of-the-department-and-the-naming-of-the-head
+Naming-day		founding:terms-this-pact-uses
+Naming-day	and the ages of instruction	schooling:ages-of-instruction
+Necessity in emergency, and the restraint		emergency:necessity-and-the-restraint
+Notices, posted		sheriff:posted-notices
+Notices, posted	of an emergency	emergency:announcement-of-an-emergency
+Notices, posted	of a proposed amendment	amendment:making-known-of-a-proposed-amendment
+Number of the Silo, the keeping of		marriage:keeping-of-the-silos-number
+Number of the Silo, the keeping of	the count of the rolls	citizenship:count-of-the-rolls
+Nursery floor, the		health:childbirth-and-the-nursery-floor
+Oath, the citizen's		citizenship:citizens-oath
+Oath, the citizen's	the ceremony of	citizenship:ceremony-of-the-oath
+Oath, the citizen's	and the citizen bound	founding:citizen-bound
+Oaths of office, the		mayor:seating-of-a-mayor-and-the-oaths-of-office
+Obligation to clean, the		cleaning:obligation-to-clean-and-the-sentencing-to-cleaning
+Obstruction of an officer, the		publicorder:obstruction-of-an-officer
+Occupant Card, the		records:occupant-card
+Occupant Card, the	and the rolls	citizenship:keeping-of-the-rolls citizenship:reconciling-of-the-rolls
+Occupant Card, the	and the drawing of the ration	supply:drawing-of-the-ration
+Offense, an	the three measures of correction	crimes:three-measures-of-correction
+Offense, an	a first, and the grace of it	crimes:grace-of-a-first-offense
+Offense, an	answered by the mines	crimes:offenses-answered-by-the-mines
+Offense, an	among the gravest	crimes:offenses-among-the-gravest
+Offense, an	against another citizen	crimes:offenses-against-another-citizen
+Offense, an	of an officer	crimes:offense-of-an-officer
+Offense, an	the obstruction of an officer	publicorder:obstruction-of-an-officer
+Offense, an	the bringing of a matter before Judicial	judicial:bringing-of-a-matter-before-judicial
+Office		founding:terms-this-pact-uses
+Office	the oaths of	mayor:seating-of-a-mayor-and-the-oaths-of-office
+Office	the removal from	assembly:assemblys-powers-of-confirmation-and-removal
+Officers of Judicial, the		judicial:officers-of-judicial
+Officers of Judicial, the	the discipline of	judicial:officers-and-their-discipline
+Officers of Judicial, the	the offense of	crimes:offense-of-an-officer
+Officers of Judicial, the	the obstruction of	publicorder:obstruction-of-an-officer
+Order of business, the		assembly:order-of-business
+Orders of a Mayor		mayor:mayors-orders-and-emergency-authority
+Orders of a Mayor	the standing orders of one who is gone	succession:standing-orders-of-a-mayor-who-is-gone
+Ore, the winning of		mines:winning-of-ore
+Ore, the winning of	the radius within which	mines:two-hundred-foot-radius
+Orphaned, the		marriage:widowed-the-orphaned-and-the-duties-of-kin
+Orphaned, the	and the ward	marriage:ward-and-the-households-duty
+Pact, this	the purpose and supremacy of	founding:purpose-and-supremacy-of-this-pact
+Pact, this	the terms it uses	founding:terms-this-pact-uses
+Pact, this	the citizen bound by	founding:citizen-bound
+Pact, this	where it is silent	judicial:rulings-where-this-pact-is-silent judicial:petition-for-a-ruling-where-this-pact-is-silent
+Pact, this	the copying and keeping of	records:copying-and-keeping-of-this-pact
+Pact, this	the amendment of	assembly:amendment-of-this-pact amendment:process-of-amendment
+Pact, this	the limits on amendment	amendment:limits-on-amendment
+Pact, this	the continuance and renewal of	amendment:continuance-and-the-renewal-of-the-pact
+Pact, this	the teaching of, to the young	schooling:charge-of-schooling schooling:course-of-study
+Past, the	false teaching of	publicorder:false-teaching-of-the-founding-and-the-past
+Past, the	relics of the time before	publicorder:relics-of-the-time-before
+Peace between citizens, the keeping of		sheriff:keeping-of-the-peace-between-citizens
+Petition	for a ruling where this Pact is silent	judicial:petition-for-a-ruling-where-this-pact-is-silent
+Petition	for an amendment	amendment:form-of-a-petition-for-amendment
+Petition	the counting of the names upon	amendment:counting-of-the-names
+Petition	for a dwelling	housing:petition-and-the-assignment
+Petition	for a reassignment	labor:reassignment-and-retirement
+Petition	for a marriage within the degrees	marriage:degrees-within-which-a-marriage-is-not-made
+Physicians, the		art:health health:charge-and-the-physicians
+Physicians, the	communicable illness	health:communicable-illness-and-the-isolation-of-the-sick
+Physicians, the	the determination of a cause of death	health:death-and-the-determination-of-cause
+Physicians, the	the citizen in danger of the citizen's own hand	health:citizen-in-danger-of-own-hand
+Physicians, the	fitness for a trade of trust	health:fitness-for-trades-of-trust-and-the-syndrome
+Physicians, the	childbirth	health:childbirth-and-the-nursery-floor
+Physicians, the	the floors and stations of the Infirmary	health:floors-and-stations-of-the-infirmary
+Physicians, the	the word to the household	health:word-to-the-household
+Physicians, the	the measure	marriage:fitting-and-keeping-of-the-measure
+Physicians, the	a citizen who cannot bear the labor	labor:citizen-who-cannot-bear-the-labor
+Porters, the		records:porters-and-the-carrying-of-word
+Porters, the	the roll and the dispatch	records:porters-roll-and-the-dispatch
+Porters, the	the seal	records:seal
+Porters, the	official word by wire and radio	records:official-word-by-wire-and-radio
+Porters, the	and the stair	sheriff:stair-and-the-landings
+Porters, the	an amendment made known by	amendment:making-known-of-a-proposed-amendment
+Power		mechanical:power-circulation-and-reclamation
+Power	the shifts and the generator	mechanical:shifts-and-the-tending-of-the-generator
+Power	to the servers	it:servers-and-their-keeping
+Price, what a thing may be asked for		commerce:what-a-thing-may-be-asked-for
+Price, what a thing may be asked for	the Silo's own purchases	commerce:silos-own-purchases
+Printing of a ratified amendment, the		amendment:printing-of-a-ratified-amendment
+Printing of a ratified amendment, the	and the copies of this Pact	records:copying-and-keeping-of-this-pact
+Private, what is, in a dwelling		housing:what-is-private-in-a-dwelling
+Private, what is, in a dwelling	and the warrant	judicial:warrant-and-the-return-of-a-search
+Purpose of this Pact, the		founding:purpose-and-supremacy-of-this-pact
+Radio		it:radios-and-the-silos-word
+Radio	official word by	records:official-word-by-wire-and-radio
+Radio	the stations of official word	it:stations-of-official-word
+Radius, the two-hundred-foot		mines:two-hundred-foot-radius
+Radius, the two-hundred-foot	the measuring of distance	mines:measuring-of-distance
+Ration, the		supply:ration
+Ration, the	the drawing of	supply:drawing-of-the-ration
+Ration, the	in emergency	emergency:ration-in-emergency
+Ration, the	of a ward	marriage:ward-and-the-households-duty
+Ration, the	withheld or reduced	marriage:unsanctioned-children-and-the-answering-for-unlicensed-birth
+Ration, the	the stations of Supply	supply:stations-of-supply
+Reassignment		labor:reassignment-and-retirement
+Reassignment	upon the ending of a shadowing	labor:ending-of-a-shadowing
+Reassignment	of a citizen who cannot bear the labor	labor:citizen-who-cannot-bear-the-labor
+Reclamation		mechanical:power-circulation-and-reclamation
+Reconciling of the rolls, the		citizenship:reconciling-of-the-rolls
+Record, a	the keeping of records	records:keeping-of-records
+Record, a		art:records
+Record, a	the classes of record	records:classes-of-record-and-their-keeping
+Record, a	a citizen's reading of the citizen's own	records:citizens-reading-of-the-citizens-own-record
+Record, a	of schooling and attendance	schooling:records-of-schooling-and-attendance
+Record, a	of the dead	it:sensors-the-wallscreen-and-the-record-of-the-dead
+Record, a	of a cleaning	cleaning:chamber-after
+Record, a	kept on the servers	it:servers-and-their-keeping
+Record, a	the archive of Judicial	judicial:archive-of-judicial
+Relic, a		founding:terms-this-pact-uses
+Relic, a	of the time before	publicorder:relics-of-the-time-before
+Relic, a	of craft and contrivance	it:relics-of-craft-and-contrivance
+Relic, a	the examination of	it:examination-of-a-relic
+Relic, a	the classification of	publicorder:classification-of-a-relic
+Relic, a	the sanction of	publicorder:sanction-of-a-relic
+Relic, a	seized as evidence	judicial:evidence-and-things-seized
+Relic, a	given up on the Forgiveness Holiday	mayor:forgiveness-holiday
+Removal from office		assembly:assemblys-powers-of-confirmation-and-removal
+Request, the final	the right of a citizen	cleaning:request-and-the-right-of-a-citizen
+Request, the final	the days between request and departure	cleaning:days-between-the-request-and-the-departure
+Request, the final	held in abeyance in emergency	emergency:holding-of-a-final-request-in-abeyance
+Request, the final	not to be amended away	amendment:limits-on-amendment
+Request, the final		+Cleaning,_the
+Rest day		founding:terms-this-pact-uses
+Rest day	and the school year	schooling:rest-days-and-the-school-year
+Rest day	and the shifts	mechanical:shifts-and-the-tending-of-the-generator mines:shifts-and-the-shoring
+Rest day	and a term in the mines	crimes:reckoning-of-a-term-in-the-mines
+Restricted instruments and devices		publicorder:restricted-instruments-and-devices
+Retirement		labor:reassignment-and-retirement
+Retirement	and the care of the aged and infirm	health:retirement-and-the-care-of-the-aged-and-infirm
+Retirement	the keeping of the retired	health:keeping-of-the-retired
+Right of birth, the		marriage:right-of-birth-and-the-span-allowed
+Ritual of the cleaning, the		cleaning:ritual-and-the-meaning
+Rolls, the		art:citizenship founding:terms-this-pact-uses
+Rolls, the	the keeping of	citizenship:keeping-of-the-rolls
+Rolls, the	the reconciling of	citizenship:reconciling-of-the-rolls
+Rolls, the	the count of	citizenship:count-of-the-rolls
+Rolls, the	the closing of a name upon a death	citizenship:death-and-the-closing-of-a-name
+Rolls, the	of license	it:rolls-of-license-and-their-keeping
+Rolls, the	of dwellings	housing:roll-of-dwellings
+Rolls, the	the porters'	records:porters-roll-and-the-dispatch
+Rolls, the	the chit-keepers'	commerce:chit-keepers-and-the-rolls-they-keep
+Rolls, the	of the market stalls	commerce:market-days-and-the-stalls
+Rolls, the	kept on the servers	it:servers-and-their-keeping
+Rotation of the farms, the		supply:farms-and-the-rotation
+Ruling where this Pact is silent, a		judicial:rulings-where-this-pact-is-silent
+Ruling where this Pact is silent, a	the petition for	judicial:petition-for-a-ruling-where-this-pact-is-silent
+Ruling where this Pact is silent, a	kept in the archive	judicial:archive-of-judicial
+Ruling where this Pact is silent, a	and the Mayor	mayor:mayor-and-judicial
+Rumor		publicorder:rumor-despair-and-the-spread-of-discontent
+Sanction of a relic, the		publicorder:sanction-of-a-relic
+Sanctioned		founding:terms-this-pact-uses
+Sanctioned	a relationship	marriage:sanctioning-of-a-relationship-and-the-making-of-a-household
+Sanctioned	an animal kept by a citizen	supply:sanctioned-animals-kept-by-citizens
+Sanctioned	a child	marriage:unsanctioned-children-and-the-answering-for-unlicensed-birth
+Sanctioned	a change to a dwelling	housing:keeping-of-dwelling-quarters
+Schooling		art:schooling
+Schooling	the charge of	schooling:charge-of-schooling
+Schooling	the ages of instruction	schooling:ages-of-instruction
+Schooling	the Founding and the limits of instruction	schooling:founding-and-the-limits-of-instruction
+Schooling	the teachers of the young	schooling:teachers-of-the-young
+Schooling	the course of study	schooling:course-of-study
+Schooling	aptitude and the passage into labor	schooling:aptitude-the-approach-of-majority-and-the-passage-into-labor
+Schooling	the correction of a child	schooling:correction-of-a-child
+Schooling	the records of schooling and attendance	schooling:records-of-schooling-and-attendance
+Schooling	the rest days and the school year	schooling:rest-days-and-the-school-year
+Schooling	the yearly examination	schooling:yearly-examination
+Schooling	the duty of a household	marriage:ward-and-the-households-duty
+Seal, the		records:seal
+Seal, the	of the suits	cleaning:suits-and-the-seals
+Seal, the	upon a dispatch	records:porters-roll-and-the-dispatch
+Seal, the	upon the lottery	marriage:administration-of-the-lottery
+Sealing of a floor, the		emergency:sealing-of-a-floor
+Search, a	the warrant and the return of	judicial:warrant-and-the-return-of-a-search
+Search, a	by an officer of Judicial	judicial:officers-of-judicial
+Search, a	and what is private in a dwelling	housing:what-is-private-in-a-dwelling
+Search, a	things seized upon	judicial:evidence-and-things-seized
+Season		founding:terms-this-pact-uses
+Seating of a Mayor, the		mayor:seating-of-a-mayor-and-the-oaths-of-office
+Sensors		founding:sensors-and-the-wallscreen
+Sensors	the keeping of	it:sensors-the-wallscreen-and-the-record-of-the-dead
+Sensors	the apparatus of the Silo's keeping	publicorder:apparatus-of-the-silos-keeping
+Sensors	what is cleaned from	cleaning:ritual-and-the-meaning cleaning:obligation-to-clean-and-the-sentencing-to-cleaning
+Sentence, a	the judgment and	judicial:judgment-and-sentence
+Sentence, a	the entry and carrying out of	judicial:entry-and-carrying-out-of-a-sentence
+Sentence, a	to the mines	crimes:offenses-answered-by-the-mines crimes:reckoning-of-a-term-in-the-mines
+Sentence, a	to a cleaning	cleaning:obligation-to-clean-and-the-sentencing-to-cleaning
+Sentence, a	a grace in place of	crimes:form-of-a-grace
+Servers, the		it:servers-and-their-keeping
+Shadowing		art:labor
+Shadowing	the three manners of entering a trade	labor:three-manners-of-entering-a-trade
+Shadowing	skilled trades and full shadowing	labor:skilled-trades-and-full-shadowing
+Shadowing	the rights and duties of the shadowed	labor:rights-and-duties-of-the-shadowed
+Shadowing	the contract of	labor:contract-of-shadowing
+Shadowing	the conduct of	labor:conduct-of-a-shadowing
+Shadowing	the ending of	labor:ending-of-a-shadowing
+Shadowing	the master's own standing	labor:masters-own-standing
+Shadowing	in a trade of trust	labor:trades-of-trust
+Shadowing	of a teacher	schooling:teachers-of-the-young
+Sheriff, the		art:sheriff
+Sheriff, the	the charge of	sheriff:charge-of-the-sheriff
+Sheriff, the	the stair and the landings	sheriff:stair-and-the-landings
+Sheriff, the	the cafeterias and other common areas	sheriff:cafeterias-and-other-common-areas
+Sheriff, the	the keeping of the peace	sheriff:keeping-of-the-peace-between-citizens
+Sheriff, the	the trades of the office	sheriff:trades-of-the-sheriffs-office
+Sheriff, the	the station and its cells	sheriff:station-and-its-cells
+Sheriff, the	arrest and the holding of a citizen	sheriff:arrest-and-the-holding-of-a-citizen
+Sheriff, the	the deputies and the floors	sheriff:deputies-and-the-floors
+Sheriff, the	posted notices	sheriff:posted-notices
+Sheriff, the	what the stair carries, and its closing	sheriff:carrying-and-closing-of-the-stair
+Sheriff, the	in the days before a departure	cleaning:days-between-the-request-and-the-departure
+Shifts	in Mechanical	mechanical:shifts-and-the-tending-of-the-generator
+Shifts	in the mines	mines:shifts-and-the-shoring
+Shoring, the		mines:shifts-and-the-shoring
+Shoring, the	and accident	mines:accident-in-the-workings
+Silo, the	the structure of	founding:structure-of-the-silo
+Silo, the	the recitation of the Founding	founding:recitation-of-the-founding
+Silo, the	the keeping of its number	marriage:keeping-of-the-silos-number
+Silo, the	the need for hands	labor:silos-need-for-hands
+Silo, the	its own clock	it:silos-own-clock
+Silo, the	its own purchases	commerce:silos-own-purchases
+Silo, the	its own word, by radio	it:radios-and-the-silos-word
+Silo, the	the zones of	housing:zones-and-the-division-of-the-silo
+Silo, the	the apparatus of its keeping	publicorder:apparatus-of-the-silos-keeping
+Sittings of Judicial, the		judicial:sittings-of-judicial-and-the-clerk
+Soil, the giving to		health:giving-to-the-soil-and-the-mourning
+Soil, the giving to	the farms and the rotation	supply:farms-and-the-rotation
+Spoilage, and its reporting		supply:spoilage-and-its-reporting
+Stair, the		founding:terms-this-pact-uses
+Stair, the	and the landings	sheriff:stair-and-the-landings
+Stair, the	what it carries, and when it is closed	sheriff:carrying-and-closing-of-the-stair
+Stair, the	the porters upon	records:porters-and-the-carrying-of-word
+Stair, the	a citizen who cannot climb	labor:citizen-who-cannot-bear-the-labor
+Stalls, the market		commerce:market-days-and-the-stalls
+Standing of a citizen, the		citizenship:standing-of-a-citizen
+Station, the Sheriff's		sheriff:station-and-its-cells
+Station, the Sheriff's	the deputies and the floors	sheriff:deputies-and-the-floors
+Stations	of official word	it:stations-of-official-word records:official-word-by-wire-and-radio
+Stations	of Supply	supply:stations-of-supply
+Stations	of the Infirmary	health:floors-and-stations-of-the-infirmary
+Stations	at which an emergency is announced	emergency:announcement-of-an-emergency
+Stores	of water and air	supply:stores-of-water-and-air
+Stores	the reckoning of	supply:reckoning-of-the-stores
+Stores	spoilage, and its reporting	supply:spoilage-and-its-reporting
+Stores	of a household upon a death	supply:stores-of-a-household-upon-a-death-and-the-return-of-the-dead
+Structural work		mechanical:structural-work-and-the-prohibition-against-digging
+Structure of the Silo, the		founding:structure-of-the-silo
+Succession		art:succession
+Succession	the Deputy Mayor and	mayor:office-of-deputy-mayor-and-succession succession:deputy-mayors-election-and-succession
+Succession	the assumption of the mayoralty	succession:deputy-mayors-assumption-of-the-mayoralty
+Succession	the election for the next Mayor	succession:election-for-the-next-mayor
+Succession	the standing orders of a Mayor who is gone	succession:standing-orders-of-a-mayor-who-is-gone
+Suits, the	and the seals	cleaning:suits-and-the-seals
+Suits, the	the fitting of	cleaning:fitting-of-the-suit
+Suits, the	the lab, and its keeping	cleaning:cleaning-lab-and-its-keeping
+Supply		art:supply
+Supply	the charge of	supply:charge-of-supply
+Supply	hydroponics and livestock	supply:hydroponics-and-the-keeping-of-livestock
+Supply	the ration	supply:ration supply:drawing-of-the-ration
+Supply	the stores of water and air	supply:stores-of-water-and-air
+Supply	sanctioned animals kept by citizens	supply:sanctioned-animals-kept-by-citizens
+Supply	the reckoning of the stores	supply:reckoning-of-the-stores
+Supply	the farms and the rotation	supply:farms-and-the-rotation
+Supply	the water for the farms	supply:water-for-the-farms
+Supply	the animals kept, and their slaughter	supply:animals-kept-and-their-slaughter
+Supply	spoilage	supply:spoilage-and-its-reporting
+Supply	the stations of	supply:stations-of-supply
+Supply	the stores of a household upon a death	supply:stores-of-a-household-upon-a-death-and-the-return-of-the-dead
+Supremacy of this Pact, the		founding:purpose-and-supremacy-of-this-pact
+Syndrome, the		health:fitness-for-trades-of-trust-and-the-syndrome
+Syndrome, the	a bar to a trade of trust	labor:trades-of-trust mayor:office-of-mayor judicial:charge-and-the-judge
+Syndrome, the	and the labor a citizen can bear	labor:citizen-who-cannot-bear-the-labor
+Table of Subjects, the		records:copying-and-keeping-of-this-pact
+Teachers of the young, the		schooling:teachers-of-the-young
+Teachers of the young, the	what a teacher must report	schooling:correction-of-a-child
+Teachers of the young, the	the limits of instruction	schooling:founding-and-the-limits-of-instruction
+Terms this Pact uses, the		founding:terms-this-pact-uses
+Things seized		judicial:evidence-and-things-seized
+Tools and materials		mechanical:tools-materials-and-their-licensing
+Trade, a		founding:terms-this-pact-uses
+Trade, a	the three manners of entering	labor:three-manners-of-entering-a-trade
+Trade, a	the simple trades	labor:mundane-labor-and-the-simple-trades
+Trade, a	the skilled trades	labor:skilled-trades-and-full-shadowing
+Trade, a	the trades of trust	labor:trades-of-trust
+Trade, a	of Information Technology	it:trades-of-information-technology
+Trade, a	of the Down Deep	mechanical:trades-of-the-down-deep
+Trade, a	of the mines	mines:trades-of-mines
+Trade, a	of the Sheriff's office	sheriff:trades-of-the-sheriffs-office
+Trade, a	the Deputy Mayor's own	succession:deputys-own-trade-dwelling-and-chits
+Trade, a	work done for another	commerce:work-a-citizen-does-for-another
+Trades of trust, the		labor:trades-of-trust
+Trades of trust, the	fitness for	health:fitness-for-trades-of-trust-and-the-syndrome
+Unsanctioned children		marriage:unsanctioned-children-and-the-answering-for-unlicensed-birth
+Unsheltered, that no citizen go		housing:that-no-citizen-go-unsheltered
+Up Top		founding:terms-this-pact-uses housing:zones-and-the-division-of-the-silo
+Vote, the	and its counting	assembly:vote-and-its-counting
+Vote, the	upon an amendment	assembly:amendment-of-this-pact amendment:process-of-amendment
+Vote, the	upon a confirmation or a removal	assembly:assemblys-powers-of-confirmation-and-removal
+Vote, the	in an election	succession:election-for-the-next-mayor
+Vote, the	upon an amendment brought again	amendment:amendment-that-fails-and-an-amendment-brought-again
+Wallscreen, the		founding:sensors-and-the-wallscreen
+Wallscreen, the	the keeping of	it:sensors-the-wallscreen-and-the-record-of-the-dead
+Wallscreen, the	at a public witnessing	cleaning:public-witnessing-of-a-cleaning
+Wallscreen, the	in the station	sheriff:station-and-its-cells
+Wallscreen, the	speech before	publicorder:rumor-despair-and-the-spread-of-discontent
+Ward, a		founding:terms-this-pact-uses
+Ward, a	and the household's duty	marriage:ward-and-the-households-duty
+Ward, a	the widowed and the orphaned	marriage:widowed-the-orphaned-and-the-duties-of-kin
+Ward, a	and the oath at majority	citizenship:ceremony-of-the-oath
+Ward, a	and the citizen's own record	records:citizens-reading-of-the-citizens-own-record
+Warrant, a	and the return of a search	judicial:warrant-and-the-return-of-a-search
+Warrant, a	and an arrest	sheriff:arrest-and-the-holding-of-a-citizen
+Warrant, a	and things seized	judicial:evidence-and-things-seized
+Warrant, a	for the servers	it:servers-and-their-keeping
+Warrant, a	against an officer	judicial:officers-and-their-discipline
+Water	the stores of	supply:stores-of-water-and-air
+Water	for the farms	supply:water-for-the-farms
+Water	circulation and reclamation	mechanical:power-circulation-and-reclamation
+Water	to a floor sealed	emergency:sealing-of-a-floor
+Weights and measures of trade, the		commerce:weights-and-measures-of-trade
+Widowed, the		marriage:widowed-the-orphaned-and-the-duties-of-kin
+Widowed, the	and the dwelling	housing:petition-and-the-assignment
+Wire, official word by		records:official-word-by-wire-and-radio
+Witnessing of a cleaning, the public		cleaning:public-witnessing-of-a-cleaning
+Word, official	the carrying of, by porter	records:porters-and-the-carrying-of-word
+Word, official	by wire and radio	records:official-word-by-wire-and-radio
+Word, official	the stations of	it:stations-of-official-word
+Word, official	the Silo's own, by radio	it:radios-and-the-silos-word
+Word, official	the seal upon	records:seal
+Word to the household, the		health:word-to-the-household
+Work a citizen does for another, the		commerce:work-a-citizen-does-for-another
+Works, the		founding:terms-this-pact-uses
+Works, the	that are not spoken of	mechanical:works-that-are-not-spoken-of
+Works, the	accident in, and its reporting	mechanical:accident-in-the-works-and-its-reporting
+Workings, the		founding:terms-this-pact-uses
+Workings, the	accident in	mines:accident-in-the-workings
+Workings, the	the shifts and the shoring	mines:shifts-and-the-shoring
+Writing, likeness, and the wall		publicorder:writing-likeness-and-the-wall
+Year		founding:terms-this-pact-uses
+Year	the school year	schooling:rest-days-and-the-school-year
+Yearly examination, the		schooling:yearly-examination
+Zones, the		housing:zones-and-the-division-of-the-silo
+Zones, the	and the deputies	sheriff:deputies-and-the-floors

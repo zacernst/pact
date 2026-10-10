@@ -1,6 +1,15 @@
-**This was written completely by AI with methodological guidance and rules from me (a human).**
+**The prose of this Pact was written entirely by AI. I wrote the rules it had
+to obey, not the sentences.** Those rules — the canon ledger, the style
+prohibitions, the consequence tracking, the cross-reference checker — are
+in this repository, and they are the part that took the work.
 
-The full text is the `main.pdf` file in the `book/` directory.
+**New here?** [`ABOUT.md`](ABOUT.md) is the one-page version: what this is,
+how it was made, and what it isn't. This file is the long version.
+
+The full text is the `main.pdf` file in the `book/` directory. It is an
+unofficial, non-commercial fan work with no connection to Hugh Howey, Apple,
+or AMC; nothing in it is canon, and nothing in it is for sale. See
+[`LICENSE`](LICENSE).
 
 # The Pact
 
@@ -31,7 +40,7 @@ inventing only what canon leaves open.
   stating Order content.
 - **Length/density**: target **60,000+ words** of statute — numbered
   Articles, Sections, and lettered clauses, plus front and back matter.
-  Current source is roughly 73,600 words; see "Current state."
+  Current source is roughly 74,400 words; see "Current state."
 - **Front/back matter**: an in-world Preamble, a table of Articles and
   Sections, and a back-matter **Amendment Log** of fictional ratified
   amendments, written so that later hands visibly imitate the founders'
@@ -129,7 +138,7 @@ cd book && make            # must end "Output written on main.pdf"
 python3 tools/xref.py      # from the repo root; must print the clean line
 ```
 
-A clean build is 229 pages with **no undefined references and no overfull
+A clean build is 231 pages with **no undefined references and no overfull
 boxes**; `grep -c 'Overfull' book/main.log` must report 0. Do not pipe
 `make` into `head` or `grep` --- the broken pipe truncates `main.aux` and
 the next build reports phantom undefined references.
@@ -147,9 +156,9 @@ years, and no week or month).
 **All 23 Articles, the Preamble, and a 21-amendment Log are drafted; two
 full-draft reviews and a hypothetical fan's review have been applied in
 full; and the book is typeset as a particular printed copy.** `make`
-builds `book/main.pdf` cleanly --- 229 pages, no undefined references, no
+builds `book/main.pdf` cleanly --- 231 pages, no undefined references, no
 overfull boxes --- and `tools/xref.py` reports no problems across 237
-Sections and 1,252 cross-references.
+Sections and 1,256 cross-references.
 
 | # | Article | | # | Article |
 |---|---|---|---|---|
@@ -203,8 +212,8 @@ cover and could not find. All seven are now in the text:
 | What the stairwell is like as infrastructure | Article 7's new Section --- the inner rail, the lift's loads, carrying a body down and not up, closures, shift-turn hours |
 | The three deputy stations as the Sheriff's standing establishment | Article 7 §8 --- the three stations named as such, two Peacekeepers to a zone, and a Peacekeeper keeping a vacant Deputy's post |
 
-**Length target met.** Source is roughly 73,600 words; the rendered PDF is
-about 81,800. Articles 5 and 23, which had been structurally underweight
+**Length target met.** Source is roughly 74,400 words; the rendered PDF is
+about 82,600. Articles 5 and 23, which had been structurally underweight
 at 924 and 796 words, are now 2,366 and 3,021. Any further growth should
 come from a fresh coherence review rather than from more sections;
 `FACTS.md` records every fact these passes fixed.

@@ -881,7 +881,7 @@ Second pass of 2026-10-08, after `FAN-REVIEW-2026-10-08.md`. Source is now
 
 See `AUTHENTICITY-2026-10-08.md` for the full proposal and its status table.
 The book now obeys Articles 21 and 23 on its own body: a Placing Page with
-blanks for the floor, the season, the copy number and six yearly comparisons; a
+blanks for the floor, the season, the copy number and nine yearly comparisons; a
 Notice of a Correction; one struck-and-corrected reading in the body at Article
 18, Section 8(b); three office stamps; a Clerk's sheet setting in Amendment 21;
 a Table of the Amendments; and a colophon.
@@ -900,3 +900,69 @@ a Table of the Amendments; and a colophon.
 - `tools/xref.py` now reads `backmatter/clerks-sheet.tex` too, but its
   Unamended-Provisions check still reads only `amendments.tex`, which is what
   makes the printed Log self-consistent.
+
+---
+
+## The server rooms: a resolved conflict between Articles 8 and 9 (2026-10-10)
+
+**The defect.** Article 9, Section 2(a) gave Mechanical **sole charge** of
+"every line and switch that carries its power beyond that housing," and 2(b)
+the same over the works of water and air, barring any citizen not assigned to
+that charge from opening or repairing any part of it. Article 8, Section 9(a)
+barred any citizen not assigned to the servers' keeping from entering the
+server rooms. A failed power line or vent inside the server rooms was therefore
+repairable by nobody: not by Mechanical, who could not enter, and not by
+Information Technology, who could not touch the line. The silo's hottest and
+most power-hungry room was the one room its power and air could not be tended
+in.
+
+**How it is resolved, and why that way.** Article 8, Section 9 now holds, as
+clauses (h) and (i), that the part remains Mechanical's charge; that a
+technician of Mechanical enters on the leave of the Head of Information
+Technology, given or refused *in the hour it is asked*, accompanied by a server
+technician, to the named part and no further; that a refusal is entered with
+its cause and copied to the Head of Mechanical and the Mayor the same day, the
+work standing undone while the refusal stands; and that where Mechanical
+reports the failure to the Mayor as endangering the generator, the works, or
+the silo, **the Mayor orders the entering and it proceeds on that order and not
+on the leave**. Article 9, Section 2 carries the matching clause, generalised to
+any room this Pact closes, with a seasonal report to the Mayor of every part
+Mechanical "has not been suffered to tend."
+
+The resolution is deliberately lopsided. Information Technology wins the
+ordinary case and keeps a veto it must exercise on the record; the override
+exists but requires Mechanical to tell the Mayor the silo is in danger, which
+is a thing a Head of Mechanical will do roughly never. The *stated* rationale is
+that the servers are too delicate for unaccompanied hands. The true one is that
+the room must never be entered by a Department that would recognise what is in
+it.
+
+**Three further gaps closed in the same section.**
+
+- **(b)--(c), the means of entry.** The Head enters in the Department's own roll
+  how many means of entry exist and who holds each; none leaves the principal
+  offices or passes to any office outside the Department; a holder going absent
+  more than one day gives it up first. Every entering is entered with the hour
+  of entering and of leaving, in a roll the Department keeps and does not
+  deliver --- and, stated flatly, "No office outside this Department keeps a
+  roll of who enters, and no office outside this Department is told."
+- **(d), the Mayor.** The Mayor *may* enter, and the right is hollow by
+  construction: she enters only with the Head, the Head attends her throughout,
+  and "what the Mayor is shown, and in what order, the Head names." She may ask
+  what any part of the rooms is for, and the Head "answers so far as this Pact
+  permits the answer" --- and this Pact permits nothing on the point. Neither is
+  required to enter what was shown, no other office enters by the clause, and
+  she cannot send anyone in her place. This is the Article 5 blind spot made
+  load-bearing: the silo's chief executive has a right of inspection that
+  conveys no information.
+- **(f), the citizen's own record.** "The servers hold no record of a citizen
+  which the archive does not also hold." A citizen's reading right runs to the
+  archive under Article 21, Section 9, "and is complete when the archive has
+  shown what the archive holds." Both sentences are true as written. Neither is
+  about what else the servers hold, because that is not a record *of a citizen*.
+
+**Deliberately left open: the Head as the subject of a warrant.** Section 9(a)
+still allows search only "upon the Judge's warrant given with the Head's own
+knowledge," and the Pact still says nothing about the case where the Head is
+what is being searched for. Information Technology therefore cannot be searched
+by surprise, ever. That is the seam; do not carve an exception into it.

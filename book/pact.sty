@@ -159,10 +159,14 @@
 % Book.cls's own \ps@headings is replaced rather than patched so that the
 % \chaptermark and \sectionmark set below are not overwritten by it.
 \makeatletter
+% The foot carries the binder's mark on the rectos it belongs on and the
+% pressman's figure where he left one; most feet are empty. Both are set
+% in the impression block below.
 \def\ps@headings{%
-  \let\@oddfoot\@empty\let\@evenfoot\@empty
-  \def\@evenhead{{\footnotesize\thepage}\hfil{\footnotesize\slshape\leftmark}}%
-  \def\@oddhead{{\footnotesize\slshape\rightmark}\hfil{\footnotesize\thepage}}%
+  \def\@oddfoot{\rlap{\pact@signature}\hfil\llap{\pact@pressfigure}}%
+  \def\@evenfoot{\rlap{\pact@pressfigure}\hfil}%
+  \def\@evenhead{{\footnotesize\folio}\hfil{\footnotesize\slshape\leftmark}}%
+  \def\@oddhead{{\footnotesize\slshape\rightmark}\hfil{\footnotesize\folio}}%
   \let\@mkboth\markboth}
 \makeatother
 
@@ -177,9 +181,28 @@
 % Running heads: the verso carries the Article and its title, the recto the
 % Section. A reader flipping the book lands somewhere nameable.
 % ---------------------------------------------------------------------------
+%
+% A second hand. One Article in this book was set by another compositor, who
+% abbreviated in the running heads where the first spelt out and who left the
+% point off his section heads. It is that Article throughout and not a page
+% of any other, which is how a gathering set by one man reads.
 \makeatletter
+\def\pact@secondhand{14}
 \renewcommand{\chaptermark}[1]{%
-  \markboth{{\scshape\@chapapp\ \thechapter}\ \textperiodcentered\ {\scshape #1}}{}}
+  \ifnum\c@chapter=\pact@secondhand\relax
+    \markboth{{\scshape Art.\ \thechapter}\ \textperiodcentered\ {\scshape #1}}{}%
+  \else
+    \markboth{{\scshape\@chapapp\ \thechapter}\ \textperiodcentered\ {\scshape #1}}{}%
+  \fi}
+\renewcommand{\sectionmark}[1]{%
+  \ifnum\c@chapter=\pact@secondhand\relax
+    \markright{\scshape Sect.\ \thesection}%
+  \else
+    \markright{\scshape Section\ \thesection}%
+  \fi}
+\renewcommand{\@seccntformat}[1]{%
+  Section \csname the#1\endcsname
+  \ifnum\c@chapter=\pact@secondhand\relax\else.\fi\ }
 \makeatother
 
 % ---------------------------------------------------------------------------
@@ -226,6 +249,154 @@
   \nobreak\,{\ttfamily\scriptsize corr.}}
 
 % ---------------------------------------------------------------------------
+% The impression.
+%
+% The layer above is what an office did to this copy. This is what the press
+% did to it, and the two date from different days. A copy of this Pact cannot
+% grow visibly old: Article 21, Section 7 has every copy compared against the
+% archive copy once yearly and replaced within the season if it is found
+% damaged or wanting, so wear never accumulates on a copy that is still in
+% its place. What a copy can carry is everything that went wrong in the
+% making, because no comparison of one printed copy against another would
+% ever catch a letter that went into the stick upside down.
+%
+% Every irregularity below is deliberate and is registered in IMPRESSION.md,
+% with the page it falls on and the reason it is there. Do not correct one
+% without striking it from that register. They are sparse on purpose: a
+% reader who notices the second turned letter has stopped reading evidence
+% and started reading a trick.
+% ---------------------------------------------------------------------------
+\RequirePackage{color}
+
+% --- Folios -----------------------------------------------------------------
+% Oldstyle figures throughout the folios and the apparatus. A fount cut for
+% a book of text has ranging figures only as an afterthought; the archivist's
+% presses did not have the afterthought.
+\makeatletter
+\newcommand{\folio}{\if@mainmatter\oldstylenums{\thepage}\else\thepage\fi}
+\makeatother
+
+% --- The binder's mark ------------------------------------------------------
+% Gathered in eights: sixteen pages to the sheet, folded three times, and the
+% first four rectos of each gathering signed so that the binder can fold and
+% collate it and so that an Officer comparing a copy under Article 21,
+% Section 7 can see at once that no gathering is wanting. The preliminaries
+% are gathering A and go unsigned, as preliminaries are set last and signed
+% by nobody; the body opens at B.
+%
+% I is used and J, U and W are passed over, which is the old practice and
+% survived into every printing house that kept one.
+%
+% \numexpr rounds where a compositor would not, so the arithmetic runs in
+% count registers, which truncate.
+\makeatletter
+\newcount\pact@page
+\newcount\pact@gathering
+\newcount\pact@leaf
+\newcommand*{\pact@sigletter}[1]{%
+  \ifcase#1 \or A\or B\or C\or D\or E\or F\or G\or H\or I\or K\or L\or M\or
+  N\or O\or P\or Q\or R\or S\or T\or V\or X\or Y\or Z\fi}
+\newcommand{\pact@signature}{%
+  \if@mainmatter
+    \ifodd\c@page
+      \pact@page=\c@page \advance\pact@page by \m@ne
+      \pact@gathering=\pact@page \divide\pact@gathering by 16
+      \pact@leaf=\pact@gathering \multiply\pact@leaf by 16
+      \advance\pact@page by -\pact@leaf
+      \pact@leaf=\pact@page \divide\pact@leaf by 2 \advance\pact@leaf by \@ne
+      \ifnum\pact@leaf<5
+        {\footnotesize\pact@sigletter{\numexpr\pact@gathering+2\relax}%
+         \ifnum\pact@leaf>\@ne\oldstylenums{\number\pact@leaf}\fi}%
+      \fi
+    \fi
+  \fi}
+
+% --- Press figures ----------------------------------------------------------
+% The numeral a pressman set at the foot of a forme so that the warehouse
+% could tell whose work it was and pay him for it. It appears on some pages
+% of a sheet and not on others, and which pages is nobody's business but his.
+% Eight in the whole book. Pinned to folios, so they are set last of all --
+% anything that repaginates the book moves them off their formes.
+\newcommand{\pact@pressfig}[2]{\ifnum\c@page=#1 {\footnotesize\oldstylenums{#2}}\fi}
+\newcommand{\pact@pressfigure}{%
+  \pact@pressfigures}
+\newcommand{\pact@pressfigures}{%
+  \pact@pressfig{23}{2}\pact@pressfig{58}{4}\pact@pressfig{76}{1}%
+  \pact@pressfig{109}{4}\pact@pressfig{134}{2}\pact@pressfig{167}{3}%
+  \pact@pressfig{194}{4}\pact@pressfig{221}{1}}
+\makeatother
+
+% An Article opens on a page of its own, and book.cls gives that page the
+% plain style: no running head, and the folio dropped to the foot. The mark
+% and the figure belong on it as much as on any other, and the signature
+% stands off to the left of the drop folio rather than under it.
+\makeatletter
+\def\ps@plain{%
+  \let\@mkboth\@gobbletwo
+  \let\@oddhead\@empty \let\@evenhead\@empty
+  \def\@oddfoot{\reset@font\rlap{\pact@signature}%
+    \hfil{\footnotesize\folio}\hfil\llap{\pact@pressfigure}}%
+  \def\@evenfoot{\reset@font\rlap{\pact@pressfigure}%
+    \hfil{\footnotesize\folio}\hfil}%
+}
+\makeatother
+
+% --- Accidents of composition ----------------------------------------------
+% Five in two hundred and forty-three pages, clustered in two gatherings,
+% because a forme was set by one man on one day and his bad days are not
+% distributed evenly through a book. Scattered one to a gathering they would
+% read as decoration.
+
+% A sort that went into the stick upside down. The commonest error in the
+% trade. Used here in its quiet form: the compositor's hand went to the wrong
+% box and came back with a q, and he set it turned, so that it prints a
+% passable b. The word is spelt right and only the letter is wrong, which is
+% why the four boxes b, d, p and q are kept apart in the case.
+%
+% An n turned to stand for a u was tried first and is useless: in this face
+% the two are indistinguishable when either is turned, so the accident leaves
+% no mark at all. b and q differ in their serifs and in the weight of the
+% bowl, and the difference survives at reading size.
+%
+% #1 is the sort that was in the stick; #2 is the letter it stands for, set
+% in white beneath it so that the text underneath the page stays correct and
+% a reader can still search for the word.
+\newcommand{\turnedsort}[2]{%
+  \makebox[0pt][l]{\textcolor[gray]{1}{#2}}\rotatebox[origin=c]{180}{#1}}
+
+% A sort out of the wrong case: the same letter from a fount of another body,
+% cast to a wider design and standing a little large in its line. Seven-point
+% metal set on a ten-point line -- the x-height nearly matches, which is why
+% the eye passes over it once and catches it the second time.
+\font\pactwrongfount=rm-lmr7 at 10.8pt
+\newcommand{\wrongfount}[1]{{\pactwrongfount #1}}
+
+% A sort that did not seat square on the stone and took the impression high.
+\newcommand{\highsort}[1]{\raisebox{1.3pt}{#1}}
+
+% A ligature the compositor did not reach for, and set as two sorts instead.
+\newcommand{\twosorts}[2]{#1\kern0.04em #2}
+
+% A word the ball did not ink evenly, or that the frisket shaded. Kept close
+% to the body colour: lighter than this and it stops reading as thin ink and
+% starts reading as a second colour, deliberately applied.
+\newcommand{\lightink}[1]{\textcolor[gray]{0.36}{#1}}
+
+% --- Casting off ------------------------------------------------------------
+% The compositor measured the copy against the sheets he had and guessed how
+% much would fit. Where he guessed short he set the end of the Article close,
+% to bring it into the sheet; where he guessed long he opened it out, to keep
+% the next Article off a recto it had no business on. Two Articles show the
+% guess, at their ends, which is where a bad cast-off always shows.
+\newenvironment{setclose}{%
+  \par\linespread{0.95}\selectfont
+  \spaceskip=0.28em plus 0.11em minus 0.09em}{\par}
+\newenvironment{setopen}{%
+  \par\linespread{1.07}\selectfont
+  \spaceskip=0.36em plus 0.60em minus 0.07em
+  \tolerance=9999}{\par}
+
+% ---------------------------------------------------------------------------
 % The Table of Subjects.
 %
 % Article 21, Section 7 requires every printed copy to carry a table of the
@@ -241,8 +412,8 @@
 
 % A reference: Article and Section, joined by a point. The clerk's compact
 % form, explained in the note at the head of the table.
-\newcommand{\subjref}[2]{\ref{#1}.\ref{#2}}
-\newcommand{\subjart}[1]{\ref{#1}}
+\newcommand{\subjref}[2]{\oldstylenums{\ref{#1}}.\oldstylenums{\ref{#2}}}
+\newcommand{\subjart}[1]{\oldstylenums{\ref{#1}}}
 \newcommand{\subjsee}[1]{\emph{See} #1}
 \newcommand{\subjseealso}[1]{\emph{See also} #1}
 
@@ -312,8 +483,56 @@
       \advance\leftskip\@tempdima
       \hskip -\leftskip
       #1\nobreak\hfil
-      \nobreak\hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}\par
+      \nobreak\hb@xt@\@pnumwidth{\hss\oldstylenums{#2}\kern-\p@\kern\p@}\par
       \penalty\@highpenalty
     \endgroup
   \fi}
+\makeatother
+
+% Section entries in the contents carry oldstyle folios too; book.cls's own
+% definition, with the page number wrapped.
+\makeatletter
+\renewcommand*\l@section[2]{\@dottedtocline{1}{1.5em}{2.3em}{#1}{\oldstylenums{#2}}}
+\makeatother
+
+% ---------------------------------------------------------------------------
+% The title page.
+%
+% Letterspacing, which no package here provides: \spaced{<track>}{<TEXT>}
+% walks the tokens and sets a kern after each. Words are divided with
+% \wordgap rather than with a space, because the token loop swallows spaces.
+% ---------------------------------------------------------------------------
+\makeatletter
+\newcommand{\wordgap}{\kern0.30em}
+\newcommand{\spaced}[2]{{\@tfor\pact@sp@c:=#2\do{\pact@sp@c\kern#1}\unkern}}
+\makeatother
+
+% The emblem: twelve citizens hand in hand, their heads outward and their
+% feet meeting at the centre, enclosed by a line that runs round them at two
+% radii and steps between the two with a square corner, twice.
+%
+% It is drawn in raw PDF path operators because this machine has no tikz, no
+% pict2e and no metafont. The operators below are produced by
+% tools/mkemblem.py, which carries the measurements and the reasoning; edit
+% that script and paste its output here rather than editing this line.
+%
+% \siloemblem{<width>} sets it on a line of its own, centred on the measure
+% and scaled to the width given. The ink as drawn is 85.2pt wide and 94.7pt
+% tall, and its centre stands 4.25pt right of the origin, because the line
+% keeps a larger radius down the right-hand side than up the left.
+\makeatletter
+\def\pact@emblemink{q 1 J 1 j 1.70 w -3.31 37.86 m -18.86 36.49 -32.00 25.76 -36.44 10.79 c -40.87 -4.18 -35.70 -20.33 -23.40 -29.94 c -23.40 -36.64 l -28.63 -36.64 l -12.20 -49.48 10.76 -49.81 27.55 -37.46 c 44.34 -25.11 50.86 -3.09 43.51 16.41 c 36.15 35.92 16.71 48.14 -4.05 46.32 c -4.05 37.86 l -3.31 37.86 l S 1.80 w q 1.00000 0.00000 -0.00000 1.00000 -0.000 19.000 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q 0.86603 0.50000 -0.50000 0.86603 -9.500 16.454 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q 0.50000 0.86603 -0.86603 0.50000 -16.454 9.500 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q 0.00000 1.00000 -1.00000 0.00000 -19.000 0.000 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q -0.50000 0.86603 -0.86603 -0.50000 -16.454 -9.500 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q -0.86603 0.50000 -0.50000 -0.86603 -9.500 -16.454 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q -1.00000 0.00000 -0.00000 -1.00000 -0.000 -19.000 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q -0.86603 -0.50000 0.50000 -0.86603 9.500 -16.454 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q -0.50000 -0.86603 0.86603 -0.50000 16.454 -9.500 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q -0.00000 -1.00000 1.00000 -0.00000 19.000 -0.000 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q 0.50000 -0.86603 0.86603 0.50000 16.454 9.500 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q q 0.86603 -0.50000 0.50000 0.86603 9.500 16.454 cm 0 0 m 0 6.00 l S 0 6.00 m 6.20 10.00 l S 0 6.00 m -6.20 10.00 l S 0 0 m 1.70 -10.60 l S 0 0 m -1.70 -10.60 l S 0.00 13.30 m 1.33 13.30 2.40 12.23 2.40 10.90 c 2.40 9.57 1.33 8.50 0.00 8.50 c -1.33 8.50 -2.40 9.57 -2.40 10.90 c -2.40 12.23 -1.33 13.30 0.00 13.30 c h f Q Q}
+\newcommand{\siloemblem}[1]{%
+  \begingroup
+    \@tempdima=#1\relax
+    \@tempdimb=0.011737\@tempdima      % the scale, as a number of points
+    \@tempdimc=1.1115\@tempdima        % the height it comes to at that scale
+    \sbox\z@{\pdfliteral{q
+      \strip@pt\@tempdimb\space 0 0 \strip@pt\@tempdimb\space
+      \strip@pt\dimexpr-4.25\@tempdimb\relax\space
+      \strip@pt\dimexpr0.5\@tempdimc\relax\space cm
+      \pact@emblemink\space Q}}%
+    \wd\z@=\z@ \ht\z@=\@tempdimc \dp\z@=\z@
+    \par\noindent\hb@xt@\hsize{\hss\usebox\z@\hss}\par
+  \endgroup}
 \makeatother
